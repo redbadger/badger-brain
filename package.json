@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/redbadger/badger-brain#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-graphql": "^0.5.3",
+    "graphql": "^0.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

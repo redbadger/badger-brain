@@ -4,6 +4,9 @@
   "description": "GraphQL server app",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "serve": "node dist/index.js",
     "test": "npm test"
   },
   "repository": {
@@ -18,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/redbadger/badger-brain/issues"
   },
-  "homepage": "https://github.com/redbadger/badger-brain#readme"
+  "homepage": "https://github.com/redbadger/badger-brain#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0"
+  }
 }

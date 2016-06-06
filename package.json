@@ -1,0 +1,22 @@
+{
+  "name": "badger-brain",
+  "version": "0.0.1",
+  "description": "GraphQL server app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redbadger/badger-brain.git"
+  },
+  "keywords": [
+    "GraphQL"
+  ],
+  "author": "Red Badger",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/redbadger/badger-brain/issues"
+  },
+  "homepage": "https://github.com/redbadger/badger-brain#readme"
+}

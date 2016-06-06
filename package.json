@@ -7,7 +7,7 @@
     "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
     "build": "babel lib -d dist --presets es2015,stage-2",
     "serve": "node dist/index.js",
-    "test": "npm test"
+    "test": "mocha lib/index.spec.js --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-2": "^6.5.0"
+    "babel-preset-stage-2": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "mocha": "^2.5.3"
   }
 }

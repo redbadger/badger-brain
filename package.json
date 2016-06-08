@@ -25,7 +25,9 @@
   "dependencies": {
     "express": "^4.13.4",
     "express-graphql": "^0.5.3",
-    "graphql": "^0.6.0"
+    "express-prismic": "^1.1.1",
+    "graphql": "^0.6.0",
+    "prismic.io": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

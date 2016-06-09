@@ -2,17 +2,17 @@
 
 node {
   def nodeHome = tool 'nodejs'
-  env.PATH='${env.PATH}:${nodeHome}/bin'
+  env.PATH="${env.PATH}:${nodeHome}/bin"
 
   stage 'Install'
-    node -v
-    npm prune
-    npm install
+    sh 'node -v'
+    sh 'npm prune'
+    sh 'npm install'
 
   stage 'Test'
-    npm test
+    sh 'npm test'
 
   stage 'Cleanup'
-    npm prune
-    rm node_modules -rf
+    sh 'npm prune'
+    sh 'rm node_modules -rf'
 }

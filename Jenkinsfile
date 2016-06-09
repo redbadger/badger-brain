@@ -5,14 +5,14 @@ node {
   env.PATH='${env.PATH}:${nodeHome}/bin'
 
   stage 'Install'
-    sh 'node -v'
-    sh 'npm prune'
-    sh 'npm install'
+    node -v
+    npm prune
+    npm install
 
   stage 'Test'
-    sh 'npm test'
+    npm test
 
   stage 'Cleanup'
-    sh 'npm prune'
-    sh 'rm node_modules -rf'
+    npm prune
+    rm node_modules -rf
 }

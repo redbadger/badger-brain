@@ -2,7 +2,7 @@
 
 node {
   def nodeHome = tool 'nodejs'
-  env.PATH="${env.PATH}:${nodeHome}/bin"
+  env.PATH='${env.PATH}:${nodeHome}/bin'
 
   stage 'Install'
     sh 'node -v'

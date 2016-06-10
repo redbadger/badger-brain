@@ -20,6 +20,6 @@ deployment:
   staging:
     branch: add-docker
     commands:
-      - docker build -t badger-brain .
       - eval `aws ecr get-login --region=us-east-1`
+      - docker build -t badger-brain .
       - bash ./bin/push-to-ecr.sh

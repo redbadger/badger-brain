@@ -11,7 +11,6 @@ dependencies:
     - rm -rf node_modules
     - npm install
     - sudo pip install awsebcli --upgrade --ignore-installed six
-    - docker build -t badger-brain .
 
 test:
   override:
@@ -21,5 +20,6 @@ deployment:
   staging:
     branch: add-docker
     commands:
+      - docker build -t badger-brain .
       - eval `aws ecr get-login --region=us-east-1`
       - bash ./bin/push-to-ecr.sh

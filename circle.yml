@@ -22,4 +22,4 @@ deployment:
     commands:
       - eval `aws ecr get-login --region=us-east-1`
       - docker build -t badger-brain .
-      - ./bin/push-to-ecr.sh $CIRCLE_SHA1
+      - bash ./bin/push-to-ecr.sh $CIRCLE_SHA1

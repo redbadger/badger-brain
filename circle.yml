@@ -1,12 +1,24 @@
 machine:
+  services:
+    - docker
   node:
     version: 6.2.1
 
 dependencies:
+  cache_directories:
+    - "~/docker"
   pre:
     - rm -rf node_modules
     - npm install
+    - sudo pip install awsebcli --upgrade --ignore-installed six
 
 test:
   override:
     - npm test
+
+deployment:
+  staging:
+    branch: add-docker
+    commands:
+      - eval `aws ecr get-login --region=us-east-1`
+      - bash ./bin/push-to-ecr.sh

@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "redbadger/badger-brain:latest",
+    "Update": "true"
+  },
+  "Authentication": {
+    "Bucket": "badger-brain-staging",
+    "Key": "docker/.dockercfg"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8000"
+    }
+  ],
+  "Logging": "/var/log/"
+}

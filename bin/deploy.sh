@@ -1,35 +1,40 @@
 #!/bin/bash
 
 ENV=$1
-SHA1=$2
-AWS_ACCOUNT=$3
+BUILD_SHA1=$2
+RELEASE_TAG=$3
 
-REPO_NAME=badger-brain
-REPO_URL=$AWS_ACCOUNT.dkr.ecr.eu-west-1.amazonaws.com/$REPO_NAME
-EB_BUCKET=elasticbeanstalk-eu-west-1-$AWS_ACCOUNT
-ZIP=$REPO_NAME-$ENV.zip
+APP_NAME=badger-brain
+AWS_ACCOUNT=578418881509
+AWS_REGION=eu-west-1
+ECR_REPO=$AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$APP_NAME
+EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT/$APP_NAME
+
+if [ "$ENV" === "production" ]; then
+  VERSION=$APP_NAME-$ENV-$RELEASE_TAG
+else
+  VERSION=$APP_NAME-$ENV
+fi
 
 # Authenticate
-eval $(aws ecr get-login --region=eu-west-1)
+eval $(aws ecr get-login --region=$AWS_REGION)
 
-# Build Docker image
-docker build -t $REPO_NAME .
+# Build, tag and deploy Docker image to ECR
+docker build -t $APP_NAME .
+docker tag $APP_NAME:$ENV $ECR_REPO:$BUILD_SHA1
+docker tag -f $APP_NAME:$ENV $ECR_REPO:$ENV
+docker push $ECR_REPO
 
-# Tag and deploy image to ECR
-docker tag $REPO_NAME:latest $REPO_URL:$SHA1
-docker tag -f $REPO_NAME:latest $REPO_URL:latest
-docker push $REPO_URL
-
-# Zip up the Dockerrun file
-zip -r $ZIP Dockerrun.aws.json
-
-# Copy Zip file to S3 bucket
-aws s3 cp $ZIP s3://$EB_BUCKET/$ZIP
+# Create, zip and upload Dockerrun.aws.json to S3 bucket
+node ./bin/create_dockerrun.js $ECR_REPO:$ENV
+ZIP_FILE=$VERSION.zip
+zip -r $ZIP_FILE Dockerrun.aws.json
+aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$ZIP_FILE
 
 # Create a new application version with the zipped up Dockerrun file
-aws elasticbeanstalk create-application-version --application-name $REPO_NAME \
-    --version-label latest --source-bundle S3Bucket=$EB_BUCKET,S3Key=$ZIP --region eu-west-1
+aws elasticbeanstalk create-application-version --application-name $APP_NAME \
+    --version-label $VERSION --source-bundle S3Bucket=$EB_BUCKET,S3Key=$ZIP_FILE --region $AWS_REGION
 
 # Update the environment to use the new application version
-aws elasticbeanstalk update-environment --environment-name $REPO_NAME-$ENV \
-      --version-label latest --region eu-west-1
+aws elasticbeanstalk update-environment --environment-name $APP_NAME-$ENV \
+    --version-label $VERSION --region $AWS_REGION

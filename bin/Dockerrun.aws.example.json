@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "578418881509.dkr.ecr.eu-west-1.amazonaws.com/badger-brain:latest",
+    "Name": "<DOCKER_IMAGE>",
     "Update": "true"
   },
   "Ports": [
@@ -9,5 +9,5 @@
       "ContainerPort": "3001"
     }
   ],
-  "Logging": "/var/log/"
+  "Logging": "/var/log"
 }

@@ -4,10 +4,10 @@ ENV=$1
 SHA1=$2
 AWS_ACCOUNT=$3
 
-ZIP=$ENV.zip
 REPO_NAME=badger-brain
 REPO_URL=$AWS_ACCOUNT.dkr.ecr.eu-west-1.amazonaws.com/$REPO_NAME
 EB_BUCKET=elasticbeanstalk-eu-west-1-$AWS_ACCOUNT
+ZIP=$REPO_NAME-$ENV.zip
 
 # Authenticate
 eval $(aws ecr get-login --region=eu-west-1)
@@ -19,10 +19,6 @@ docker build -t $REPO_NAME .
 docker tag $REPO_NAME:latest $REPO_URL:$SHA1
 docker tag -f $REPO_NAME:latest $REPO_URL:latest
 docker push $REPO_URL
-
-# Apply correct repository and tag to Dockerrun.aws.json
-# sed -i '' "s/<REPO_URL>/$REPO_URL/" Dockerrun.aws.json
-# sed -i '' "s/<TAG>/$TAG/" Dockerrun.aws.json
 
 # Zip up the Dockerrun file
 zip -r $ZIP Dockerrun.aws.json

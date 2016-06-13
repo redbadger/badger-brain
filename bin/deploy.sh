@@ -17,7 +17,7 @@ docker build -t $REPO_NAME .
 
 # Tag and deploy image to ECR
 docker tag $REPO_NAME:latest $REPO_URL:$SHA1
-docker tag $REPO_NAME:latest $REPO_URL:latest
+docker tag -f $REPO_NAME:latest $REPO_URL:latest
 docker push $REPO_URL
 
 # Apply correct repository and tag to Dockerrun.aws.json

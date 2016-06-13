@@ -1,9 +1,10 @@
 #!/bin/bash
 
-SHA1=$1
-AWS_ACCOUNT=$2
+ENV=$1
+SHA1=$2
+AWS_ACCOUNT=$3
 
-ZIP=staging.zip
+ZIP=$ENV.zip
 REPO_NAME=badger-brain
 REPO_URL=$AWS_ACCOUNT.dkr.ecr.eu-west-1.amazonaws.com/$REPO_NAME
 EB_BUCKET=elasticbeanstalk-eu-west-1-$AWS_ACCOUNT
@@ -34,5 +35,5 @@ aws elasticbeanstalk create-application-version --application-name $REPO_NAME \
     --version-label latest --source-bundle S3Bucket=$EB_BUCKET,S3Key=$ZIP --region eu-west-1
 
 # Update the environment to use the new application version
-aws elasticbeanstalk update-environment --environment-name $REPO_NAME-staging \
+aws elasticbeanstalk update-environment --environment-name $REPO_NAME-$ENV \
       --version-label latest --region eu-west-1

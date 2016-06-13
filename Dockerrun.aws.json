@@ -6,7 +6,7 @@
   },
   "Ports": [
     {
-      "ContainerPort": "8000"
+      "ContainerPort": "3001"
     }
   ],
   "Logging": "/var/log/"

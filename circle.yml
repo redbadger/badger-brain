@@ -20,4 +20,4 @@ deployment:
   staging:
     branch: add-docker
     commands:
-      - sudo bash ./bin/deploy.sh staging $CIRCLE_SHA1 $AWS_ACCOUNT
+      - sudo bash ./bin/deploy.sh latest $CIRCLE_SHA1 $AWS_ACCOUNT

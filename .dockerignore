@@ -1,0 +1,7 @@
+dist
+node_modules
+.eslintcache
+.git
+.gitignore
+circle.yml
+README.md

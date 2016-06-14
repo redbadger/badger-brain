@@ -1,0 +1,13 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "<DOCKER_IMAGE>",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3001"
+    }
+  ],
+  "Logging": "/var/log"
+}

@@ -2,7 +2,7 @@
 
 GraphQL server for all Red Badger related data.
 
-This project is public. No sensitive data should be commited to the repository.
+This project is public. No sensitive data should be committed to the repository.
 
 ## Ideas
 
@@ -16,4 +16,3 @@ List of data providers:
 
 * Workable
 * Prismic.io
-

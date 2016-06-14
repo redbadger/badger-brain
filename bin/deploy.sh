@@ -11,9 +11,9 @@ ECR_REPO=$AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$APP_NAME
 EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT/$APP_NAME
 
 if [ "$ENV" === "production" ]; then
-  VERSION=$APP_NAME-$ENV-$RELEASE_TAG
+  VERSION=$APP_NAME_$ENV_$RELEASE_TAG
 else
-  VERSION=$APP_NAME-$ENV
+  VERSION=$APP_NAME_$ENV
 fi
 
 # Authenticate

@@ -54,7 +54,8 @@
   "config": {
     "pre-git": {
       "pre-commit": [
-        "npm run eslint"
+        "npm run eslint",
+        "npm t"
       ],
       "pre-push": [],
       "post-commit": [],

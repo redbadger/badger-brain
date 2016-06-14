@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-0",
     "build": "babel lib -d dist --presets es2015,stage-0",
-    "eslint": "eslint",
+    "eslint": "eslint lib/",
     "serve": "node dist/index.js",
     "test": "mocha lib/query.spec.js --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter"
   },

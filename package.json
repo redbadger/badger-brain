@@ -8,7 +8,8 @@
     "build": "babel lib -d dist --presets es2015,stage-0",
     "eslint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/query.spec.js --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter"
+    "test": "mocha lib/query.spec.js --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter",
+    "commit": "commit-wizard"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,18 @@
     "injectr": "^0.5.1",
     "mocha": "^2.5.3",
     "mocha-trumpet-reporter": "0.0.3",
+    "pre-git": "^3.9.0",
     "sinon": "^1.17.4"
+  },
+  "config": {
+    "pre-git": {
+      "pre-commit": [
+        "npm run eslint"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-checkout": [],
+      "post-merge": []
+    }
   }
 }

@@ -27,7 +27,7 @@ docker tag -f $APP_NAME:$ENV $ECR_REPO:$ENV
 docker push $ECR_REPO
 
 # Create Dockerrun.aws.json from template
-node ./bin/create_dockerrun.js "${ECR_REPO}/${APP_NAME}:${ENV}"
+node ./bin/create_dockerrun.js $ECR_REPO/$APP_NAME:$ENV
 
 # Zip up Dockerrun.aws.json and upload to S3 bucket
 if [ -f "Dockerrun.aws.json" ]

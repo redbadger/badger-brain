@@ -25,6 +25,5 @@ node_modules
 
 # Built assets
 dist
-Dockerrun.aws.json
 
 .DS_Store

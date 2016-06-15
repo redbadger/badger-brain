@@ -30,15 +30,9 @@ docker push $ECR_REPO
 node ./bin/create_dockerrun.js $ECR_REPO/$APP_NAME:$ENV
 
 # Zip up Dockerrun.aws.json and upload to S3 bucket
-if [ -f "Dockerrun.aws.json" ]
-then
-  ZIP_FILE=$VERSION.zip
-  zip -r $ZIP_FILE Dockerrun.aws.json
-  aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$APP_NAME/$ZIP_FILE
-else
-  echo "Could not create Dockerrun.aws.json - please check error logs"
-  exit 1
-fi
+ZIP_FILE=$VERSION.zip
+zip -r $ZIP_FILE Dockerrun.aws.json
+aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$APP_NAME/$ZIP_FILE
 
 # Create a new application version with the zipped up Dockerrun file
 aws elasticbeanstalk create-application-version --application-name $APP_NAME \

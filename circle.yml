@@ -18,7 +18,7 @@ test:
 
 deployment:
   staging:
-    branch: master
+    branch: add-deployment-error-checking
     commands:
       - sudo bash ./bin/deploy.sh staging $CIRCLE_SHA1
 

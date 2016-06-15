@@ -1,17 +1,24 @@
 {
   "parser": "babel-eslint",
-  "ecmaFeatures": {
-    "modules": true,
+  "extends": "airbnb/base",
+  "globals": {
+    "describe" : false,
+    "it": false,
+    "expect": false,
+    "before" : false,
+    "beforeEach" : false,
+    "after" : false,
+    "afterEach" : false
   },
   "env": {
-    "node": true,
-    "mocha": true
+    "es6": true,
+    "node": true
   },
-  "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "modules": true
+  },
   "rules": {
-    "indent": [2, 2, {"SwitchCase": 1}],
-    "semi": 2,
-    "space-after-keywords": 2,
-    "space-before-function-paren": 2
+    "guard-for-in": 0,
+    "no-unused-vars": [2, {"args": "after-used", "varsIgnorePattern": "^React"}],
   }
 }

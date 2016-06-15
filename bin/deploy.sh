@@ -38,7 +38,7 @@ if [ "$ENV" == "production" ]
 then
   # Create a new application version with the zipped up Dockerrun file
   aws elasticbeanstalk create-application-version --application-name $APP_NAME \
-      --version-label $VERSION --source-bundle S3Bucket=$EB_BUCKET,S3Key=$ZIP_FILE --region $AWS_REGION
+      --version-label $VERSION --source-bundle S3Bucket=$EB_BUCKET,S3Key=$APP_NAME/$ZIP_FILE --region $AWS_REGION
 fi
 
 # Update the environment to use the new application version

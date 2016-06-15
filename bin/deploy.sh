@@ -10,7 +10,7 @@ AWS_ACCOUNT=578418881509
 AWS_REGION=eu-west-1
 ECR_REPO=$AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$APP_NAME
 EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT
-VERSION=${APP_NAME}-${ENV}
+VERSION=$APP_NAME-$ENV
 
 # If we're deploying to production, append the release tag
 [[ "$ENV" == "production" ]] && VERSION="${VERSION}-${RELEASE_TAG}"
@@ -25,9 +25,9 @@ docker tag -f $APP_NAME:$ENV $ECR_REPO:$ENV
 docker push $ECR_REPO
 
 # Apply docker image path to Dockerrun.aws.json template
-sed -i '' "s@<ECR_REPO>@$ECR_REPO@g" Dockerrun.aws.json
-sed -i '' "s@<IMAGE>@$APP_NAME@g" Dockerrun.aws.json
-sed -i '' "s@<TAG>@$ENV@g" Dockerrun.aws.json
+perl -pi -e "s,<ECR_REPO>,$ECR_REPO,g" "Dockerrun.aws.json"
+perl -pi -e "s,<IMAGE>,$APP_NAME,g" "Dockerrun.aws.json"
+perl -pi -e "s,<TAG>,$ENV,g" "Dockerrun.aws.json"
 
 # Zip up Dockerrun.aws.json and upload to S3 bucket
 ZIP_FILE=$VERSION.zip

@@ -8,28 +8,33 @@ APP_NAME=badger-brain
 AWS_ACCOUNT=578418881509
 AWS_REGION=eu-west-1
 ECR_REPO=$AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$APP_NAME
-EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT/$APP_NAME
+EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT
 
-if [ "$ENV" === "production" ]; then
-  VERSION=$APP_NAME-$ENV-$RELEASE_TAG
+if [ "$ENV" == "production" ]
+then
+  VERSION="${APP_NAME}-${ENV}-${RELEASE_TAG}"
 else
-  VERSION=$APP_NAME-$ENV
+  VERSION="${APP_NAME}-${ENV}"
 fi
 
 # Authenticate
 eval $(aws ecr get-login --region=$AWS_REGION)
 
 # Build, tag and deploy Docker image to ECR
-docker build -t $APP_NAME .
+docker build -t $APP_NAME:$ENV .
 docker tag $APP_NAME:$ENV $ECR_REPO:$BUILD_SHA1
 docker tag -f $APP_NAME:$ENV $ECR_REPO:$ENV
 docker push $ECR_REPO
 
-# Create, zip and upload Dockerrun.aws.json to S3 bucket
-node ./bin/create_dockerrun.js $ECR_REPO:$ENV
+# Apply docker image path to Dockerrun.aws.json template
+sed -i '' -e "s/<ECR_REPO>/$ECR_REPO/" Dockerrun.aws.json
+sed -i '' -e "s/<IMAGE>/$APP_NAME/" Dockerrun.aws.json
+sed -i '' -e "s/<TAG>/$ENV/" Dockerrun.aws.json
+
+# Zip up Dockerrun.aws.json and upload to S3 bucket
 ZIP_FILE=$VERSION.zip
 zip -r $ZIP_FILE Dockerrun.aws.json
-aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$ZIP_FILE
+aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$APP_NAME/$ZIP_FILE
 
 # Create a new application version with the zipped up Dockerrun file
 aws elasticbeanstalk create-application-version --application-name $APP_NAME \

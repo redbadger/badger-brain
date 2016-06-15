@@ -1,0 +1,95 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "fieldset" : "Title",
+      "config" : {
+        "label" : "Title of Event"
+      }
+    },
+    "strapline" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Strapline"
+      }
+    },
+    "event-image" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Feature Image"
+      }
+    },
+    "body" : {
+      "type" : "StructuredText",
+      "fieldset" : "Body",
+      "config" : {
+        "placeholder" : "Full event description",
+        "multi" : "p,strong,em,hyperlink"
+      }
+    },
+    "timestamp" : {
+      "type" : "Timestamp",
+      "fieldset" : "Date and time",
+      "config" : {
+        "label" : "Event time"
+      }
+    },
+    "address" : {
+      "type" : "Text",
+      "fieldset" : "Event location",
+      "config" : {
+        "label" : "Event address"
+      }
+    },
+    "location" : {
+      "type" : "GeoPoint"
+    },
+    "externalLinks" : {
+      "type" : "Group",
+      "fieldset" : "External links",
+      "config" : {
+        "fields" : {
+          "label" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link label"
+            }
+          },
+          "link" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link URL"
+            }
+          }
+        }
+      }
+    },
+    "internalLinks" : {
+      "type" : "Group",
+      "fieldset" : "Internal links",
+      "config" : {
+        "fields" : {
+          "label" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link label"
+            }
+          },
+          "link" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link URL"
+            }
+          }
+        }
+      }
+    }
+  }
+}

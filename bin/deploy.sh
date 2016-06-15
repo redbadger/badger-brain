@@ -21,7 +21,7 @@ fi
 eval $(aws ecr get-login --region=$AWS_REGION)
 
 # Build, tag and deploy Docker image to ECR
-docker build -t $APP_NAME .
+docker build -t $APP_NAME:$ENV .
 docker tag $APP_NAME:$ENV $ECR_REPO:$BUILD_SHA1
 docker tag -f $APP_NAME:$ENV $ECR_REPO:$ENV
 docker push $ECR_REPO

@@ -8,12 +8,13 @@ APP_NAME=badger-brain
 AWS_ACCOUNT=578418881509
 AWS_REGION=eu-west-1
 ECR_REPO=$AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$APP_NAME
-EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT/$APP_NAME
+EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNTß
 
-if [ "$ENV" === "production" ]; then
-  VERSION=$APP_NAME_$ENV_$RELEASE_TAG
+if [ "$ENV" === "production" ]
+then
+  VERSION="${APP_NAME}-${ENV}-${RELEASE_TAG}"
 else
-  VERSION=$APP_NAME_$ENV
+  VERSION="${APP_NAME}-${ENV}"
 fi
 
 # Authenticate
@@ -29,7 +30,7 @@ docker push $ECR_REPO
 node ./bin/create_dockerrun.js $ECR_REPO:$ENV
 ZIP_FILE=$VERSION.zip
 zip -r $ZIP_FILE Dockerrun.aws.json
-aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$ZIP_FILE
+aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$APP_NAME/$ZIP_FILE
 
 # Create a new application version with the zipped up Dockerrun file
 aws elasticbeanstalk create-application-version --application-name $APP_NAME \

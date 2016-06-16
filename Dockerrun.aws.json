@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "<ECR_REPO>/<IMAGE>:<TAG>",
+    "Name": "<ECR_REPO>:<TAG>",
     "Update": "true"
   },
   "Ports": [

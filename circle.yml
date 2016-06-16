@@ -22,7 +22,7 @@ deployment:
     commands:
       - sudo bash ./bin/deploy.sh staging
 
-  production:
+  live:
     tag: /v[0-9]+(\.[0-9]+)*/
     commands:
-      - sudo bash ./bin/deploy.sh production $CIRCLE_TAG
+      - sudo bash ./bin/deploy.sh live $CIRCLE_TAG

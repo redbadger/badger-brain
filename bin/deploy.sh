@@ -14,7 +14,7 @@ EB_BUCKET=elasticbeanstalk-$AWS_REGION-$AWS_ACCOUNT
 eval $(aws ecr get-login --region=$AWS_REGION)
 
 # Build Docker image
-if [ "$ENV" == "production" ]
+if [ "$ENV" == "live" ]
 then
   VERSION=$RELEASE_TAG
   docker build -t $APP_NAME:$RELEASE_TAG .
@@ -37,7 +37,7 @@ zip -r $ZIP_FILE Dockerrun.aws.json
 aws s3 cp $ZIP_FILE s3://$EB_BUCKET/$APP_NAME/$ZIP_FILE
 
 # In production, create a new app version
-if [ "$ENV" == "production" ]
+if [ "$ENV" == "live" ]
 then
   # Create a new application version with the zipped up Dockerrun file
   aws elasticbeanstalk create-application-version --application-name $APP_NAME \

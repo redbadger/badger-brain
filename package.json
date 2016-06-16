@@ -8,7 +8,7 @@
     "build": "babel lib -d dist --presets es2015,stage-0",
     "eslint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/query.spec.js --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter",
+    "test": "mocha lib/ --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter",
     "commit": "commit-wizard"
   },
   "repository": {

@@ -38,7 +38,7 @@
       "fieldset" : "Body",
       "config" : {
         "placeholder" : "Full news description",
-        "multi" : "p,strong,em,hyperlink"
+        "multi" : "p"
       }
     },
     "externalLinks" : {

@@ -8,7 +8,7 @@
     "build": "babel lib -d dist --presets es2015,stage-0",
     "eslint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/ --compilers js:babel-register --require babel-polyfill -R nyan",
+    "test": "mocha lib/ --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter",
     "commit": "commit-wizard"
   },
   "repository": {
@@ -47,6 +47,7 @@
     "eslint-plugin-import": "^1.8.1",
     "injectr": "^0.5.1",
     "mocha": "^2.5.3",
+    "mocha-trumpet-reporter": "0.0.3",
     "nock": "^8.0.0",
     "nodemon": "^1.9.2",
     "pre-git": "^3.9.1",

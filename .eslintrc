@@ -8,7 +8,8 @@
     "before" : false,
     "beforeEach" : false,
     "after" : false,
-    "afterEach" : false
+    "afterEach" : false,
+    "injectr": false
   },
   "env": {
     "es6": true,

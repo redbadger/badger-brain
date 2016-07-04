@@ -8,7 +8,7 @@
     "build": "babel lib -d dist",
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/ --compilers js:babel-register --require babel-polyfill -R mocha-trumpet-reporter",
+    "test": "mocha lib/",
     "commit": "commit-wizard"
   },
   "repository": {

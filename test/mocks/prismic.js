@@ -85,6 +85,7 @@ export default class PrismicMock {
       page: '1',
       pageSize: '100',
       ref: 'V3UXpioAACQARLlk',
+      fetch: `${docType}.it%20works!`,
       q: `%5B%5B%3Ad%20%3D%20at(document.type%2C%20%22${docType}%22)%5D%5D`,
     });
 
@@ -93,16 +94,17 @@ export default class PrismicMock {
       .reply(200, '{"results": []}');
   }
 
-  mockDocumentIdQuery(docId) {
+  mockDocumentIdQuery(docId, docType) {
     const queries = queryify({
       page: '1',
       pageSize: '20',
       ref: 'V3UXpioAACQARLlk',
+      fetch: `${docType}.it%20works!`,
       q: `%5B%5B%3Ad%20%3D%20at(document.id%2C%20%22${docId}%22)%5D%5D`,
     });
 
     return nock(this.repo)
       .get(`/api/documents/search?${queries}`)
-      .reply(200, '{"results": []}');
+      .reply(200, '{"results": []}')
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node",
     "build": "babel lib -d dist",
-    "eslint": "eslint lib/",
+    "lint": "eslint lib/",
     "serve": "node dist/index.js",
     "test": "mocha lib/",
     "commit": "commit-wizard"
@@ -57,7 +57,7 @@
   "config": {
     "pre-git": {
       "pre-commit": [
-        "npm run eslint",
+        "npm run lint",
         "npm t"
       ],
       "pre-push": [],

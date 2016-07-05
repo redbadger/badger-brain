@@ -1,0 +1,22 @@
+{
+   "community":{
+      "communitySummary":"React is having a huge impact on the way we think about Web UI development. Our Meetups are an opportunity to learn why and share experiences. We are a sociable group and very welcoming to newcomers.\nSee you soon!",
+      "mailingListTitle":"Gxet ticket reminders and event information about React London events straight to your inbox.",
+      "displayedEventId":"V3pz8ykAACgAgAqr",
+      "event":{
+         "id":"V3pz8ykAACgAgAqr",
+         "speakers":[
+            {
+               "name":"Kadi Kraman",
+               "company":"Red Badger",
+               "talkTitle":"Draft.js in the real world",
+               "talkSummary":"Earlier this year, Facebook came out with their take on building a highly customisable rich text editor ­Draft.js. Built especially for React and powered by an immutable data model, it takes on the daunting task of solving all our rich text editing problems. She will provide a brief explanation on how Draft.js works and talk about her experience using it on a project along with Redux Form.",
+               "twitterHandle":"@test",
+               "githubHandle":"testing",
+               "blogURL":"http://test",
+               "imageURL":"http://image"
+            }
+         ]
+      }
+   }
+}

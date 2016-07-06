@@ -20,15 +20,6 @@
       "config" : {
         "label" : "Mailing List Summary"
       }
-    },
-    "event" : {
-      "type" : "Link",
-      "fieldset" : "Link to an event",
-      "config" : {
-        "select" : "document",
-        "customtypes" : [ "event" ],
-        "placeholder" : "Link to a event"
-      }
     }
   }
 }

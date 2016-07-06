@@ -90,6 +90,15 @@
           }
         }
       }
+    },
+     "community" : {
+      "type" : "Link",
+      "fieldset" : "Link to the associated community",
+      "config" : {
+        "select" : "document",
+        "customtypes" : [ "community" ],
+        "placeholder" : "Link to the associated community"
+      }
     }
   }
 }

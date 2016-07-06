@@ -1,18 +1,22 @@
 import nock from 'nock';
 
-const queryify = (object) => {
-  return Object.keys(object).reduce((pairs, key) => (
-    pairs.concat(`${key}=${object[key]}`)
-  ), []).join('&');
-};
+const queryify = (object) => Object.keys(object).reduce((pairs, key) => (
+  pairs.concat(`${key}=${object[key]}`)
+), []).join('&');
 
 export default class PrismicMock {
   constructor(repo = 'https://rb-website-stage.prismic.io') {
     this.repo = repo;
 
     nock.emitter.on('no match', (req) => {
+      const err = {
+        message: 'Nock no match for URL request',
+        req,
+      };
+
       // eslint-disable-next-line no-console
-      console.error('Nock no match for URL request', req);
+      console.error(err);
+      throw new Error(err);
     });
   }
 
@@ -99,6 +103,19 @@ export default class PrismicMock {
       pageSize: '20',
       ref: 'V3UXpioAACQARLlk',
       q: `%5B%5B%3Ad%20%3D%20at(document.id%2C%20%22${docId}%22)%5D%5D`,
+    });
+
+    return nock(this.repo)
+      .get(`/api/documents/search?${queries}`)
+      .reply(200, '{"results": []}');
+  }
+
+  mockDocumentTagQuery(tag) {
+    const queries = queryify({
+      page: '1',
+      pageSize: '20',
+      ref: 'V3UXpioAACQARLlk',
+      q: `%5B%5B%3Ad%20%3D%20any(document.tags%2C%20%5B%22${tag}%22%5D)%5D%5D`,
     });
 
     return nock(this.repo)

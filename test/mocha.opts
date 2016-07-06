@@ -1,3 +1,4 @@
 --compilers js:babel-register
 --require test/helpers/globals
 --require babel-polyfill
+---reporter mocha-trumpet-reporter

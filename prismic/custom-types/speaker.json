@@ -1,0 +1,76 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "name" : {
+      "type" : "Text",
+      "fieldset" : "Name",
+      "config" : {
+        "label" : "Name"
+      }
+    },
+    "event" : {
+      "type" : "Link",
+      "fieldset" : "Link to a event",
+      "config" : {
+        "select" : "document",
+        "customtypes" : [ "event" ],
+        "placeholder" : "Link to an event"
+      }
+    },
+    "company" : {
+      "type" : "Text",
+      "fieldset" : "Company",
+      "config" : {
+        "label" : "Company"
+      }
+    },
+    "talkTitle" : {
+      "type" : "Text",
+      "fieldset" : "Talk Title",
+      "config" : {
+        "label" : "Talk Title "
+      }
+    },
+    "talkSummary" : {
+      "type" : "Text",
+      "fieldset" : "Talk Summary",
+      "config" : {
+        "label" : "Talk Summary"
+      }
+    },
+    "twitterHandle" : {
+      "type" : "Text",
+      "fieldset" : "Twitter Handle",
+      "config" : {
+        "label" : "Twitter Handle"
+      }
+    },
+    "githubHandle" : {
+      "type" : "Text",
+      "fieldset" : "Github Handle",
+      "config" : {
+        "placeholder" : "Github Handle"
+      }
+    },
+    "blogURL" : {
+      "type" : "Text",
+      "fieldset" : "Blog URL",
+      "config" : {
+        "label" : "Blog URL"
+      }
+    },
+    "imageURL" : {
+      "type" : "Text",
+      "fieldset" : "Image URL",
+      "config" : {
+        "label" : "Image URL"
+      }
+    }
+  }
+}

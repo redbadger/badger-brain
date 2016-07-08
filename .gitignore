@@ -21,7 +21,9 @@ node_modules
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+Dockerrun.aws.json
 *.zip
+
 
 # Built assets
 dist

@@ -91,13 +91,20 @@
         }
       }
     },
-     "community" : {
-      "type" : "Link",
-      "fieldset" : "Link to the associated community",
+    "talks" : {
+      "type" : "Group",
+      "fieldset" : "Event Talks",
       "config" : {
-        "select" : "document",
-        "customtypes" : [ "community" ],
-        "placeholder" : "Link to the associated community"
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "talk" ],
+              "placeholder" : "Link to a talk"
+            }
+          }
+        }
       }
     }
   }

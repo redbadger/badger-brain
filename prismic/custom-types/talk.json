@@ -9,36 +9,29 @@
     },
     "title" : {
       "type" : "Text",
-      "fieldset" : "Community Title",
+      "fieldset" : "Talk Title",
       "config" : {
-        "label" : "Community Title"
+        "label" : "Talk Title "
       }
     },
     "summary" : {
       "type" : "Text",
-      "fieldset" : "Community Summary",
+      "fieldset" : "Talk Summary",
       "config" : {
-        "label" : "Community Summary"
+        "label" : "Talk Summary"
       }
     },
-    "mailingListTitle" : {
-      "type" : "Text",
-      "fieldset" : "Mailing List Summary",
-      "config" : {
-        "label" : "Mailing List Summary"
-      }
-    },
-    "events" : {
+    "speakers" : {
       "type" : "Group",
-      "fieldset" : "Community Events",
+      "fieldset" : "Speakers",
       "config" : {
         "fields" : {
           "data" : {
             "type" : "Link",
             "config" : {
               "select" : "document",
-              "customtypes" : [ "event" ],
-              "placeholder" : "Link to an event"
+              "customtypes" : [ "speaker" ],
+              "placeholder" : "Link to the talk speakers"
             }
           }
         }

@@ -2,26 +2,11 @@
   "data": {
     "allSpeakers": [
       {
-        "id": "V30LsSMAANwL0Rvp",
+        "id": "V35-XyMAAHMn1ugb",
         "name": "Kadi Kraman",
         "company": "Red Badger",
-        "talkTitle": "Draft.js in the real world",
-        "talkSummary": "Earlier this year, Facebook came out with their take on building a highly customisable rich text editor ­Draft.js. Built especially for React and powered by an immutable data model, it takes on the daunting task of solving all our rich text editing problems. She will provide a brief explanation on how Draft.js works and talk about her experience using it on a project along with Redux Form.",
-        "twitterHandle": "@kadi",
-        "githubHandle": "kadi",
-        "blogURL": "http://blog",
-        "imageURL": "http://image"
-      },
-      {
-        "id": "V30LsSMAANwL0Rvp2",
-        "name": "Andrew Bestbier",
-        "company": "Red Badger",
-        "talkTitle": "An Introduction to React",
-        "talkSummary": "Earlier this year, Facebook introduced React to the world",
-        "twitterHandle": "@andrew",
-        "githubHandle": "andrew",
-        "blogURL": "http://blog",
-        "imageURL": "http://image"
+        "githubHandle": "kadikraman",
+        "twitterHandle": "kadikraman"
       }
     ]
   }

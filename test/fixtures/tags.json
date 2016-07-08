@@ -1,0 +1,130 @@
+{
+  "page": 1,
+  "results_per_page": 100,
+  "results_size": 2,
+  "total_results_size": 2,
+  "total_pages": 1,
+  "next_page": null,
+  "prev_page": null,
+  "results": [{
+    "id": "V2u22ywAAEMgvXbX",
+    "uid": "designing-in-cross-functional-teams",
+    "type": "event",
+    "href": "https://rb-website-stage.prismic.io/api/documents/search?ref=V30JJCMAANwL0RG1&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22V2u22ywAAEMgvXbX%22%29+%5D%5D",
+    "tags": ["react", "meetups", "design", "ux", "development", "random", "nathalie", "ranj test", "seven"],
+    "slugs": ["designing-in-cross-functional-teams"],
+    "linked_documents": [],
+    "data": {
+      "event": {
+        "title": {
+          "type": "Text",
+          "value": "Designing in cross-functional teams"
+        },
+        "strapline": {
+          "type": "Text",
+          "value": "Join our Visual Designer Monika Koziol who will be speaking at the Front-end London meetup about the importance of teamwork"
+        },
+        "event-image": {
+          "type": "Text",
+          "value": "profile_MKo.jpg"
+        },
+        "body": {
+          "type": "StructuredText",
+          "value": [{
+            "type": "paragraph",
+            "text": "Teamwork, love it or hate but no modern web application has been built by a single person. This talk will be about the benefits of designing component based UIs, lean methods, kanban and working in cross-functional and collocated teams. All from designer perspective. Ranj added this\n\n\nWhen: Thursday 30th June, 19:00 – 21:30\n\nWhere: [Made by Many, London](https://www.google.co.uk/maps/place/Made+by+Many/@51.5324355,-0.1016787,17z/data=!3m1!4b1!4m5!3m4!1s0x48761b5e9962443f:0xe79a8a7cecb49c95!8m2!3d51.5324355!4d-0.09949)\n",
+            "spans": []
+          }]
+        },
+        "timestamp": {
+          "type": "Timestamp",
+          "value": "2016-07-01T11:00:00+0000"
+        },
+        "location": {
+          "type": "GeoPoint",
+          "value": {
+            "latitude": 0.0,
+            "longitude": -0.7031303644180298
+          }
+        },
+        "externalLinks": {
+          "type": "Group",
+          "value": [{
+            "label": {
+              "type": "Text",
+              "value": "Find out more about the event here"
+            },
+            "link": {
+              "type": "Text",
+              "value": "http://www.frontendlondon.co.uk/"
+            }
+          }]
+        },
+        "internalLinks": {
+          "type": "Group",
+          "value": [{
+            "label": {
+              "type": "Text",
+              "value": "More by Monika"
+            },
+            "link": {
+              "type": "Text",
+              "value": "/about-us/people/monika-koziol"
+            }
+          }]
+        }
+      }
+    }
+  }, {
+    "id": "V2u2sCwAAEMgvXW8",
+    "uid": "june-london-react-user-group",
+    "type": "event",
+    "href": "https://rb-website-stage.prismic.io/api/documents/search?ref=V30JJCMAANwL0RG1&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22V2u2sCwAAEMgvXW8%22%29+%5D%5D",
+    "tags": ["react", "meetups"],
+    "slugs": ["june-london-react-user-group"],
+    "linked_documents": [],
+    "data": {
+      "event": {
+        "title": {
+          "type": "Text",
+          "value": "June London React User Group"
+        },
+        "strapline": {
+          "type": "Text",
+          "value": "Join us for an evening of great conversation around React"
+        },
+        "event-image": {
+          "type": "Text",
+          "value": "react-poster.jpg"
+        },
+        "body": {
+          "type": "StructuredText",
+          "value": [{
+            "type": "paragraph",
+            "text": "6:30 - Doors open for pizza and beers\n\n7:00 - Intro from [Stu](http://red-badger.com/about-us/people/stuart-harris/)\n\n7:10 - up to 3 speakers each with 20 minutes to talk followed by Q&A\n\n8:30 / 9:00 - Everyone is welcome to stay for another drink\n\nLocation: [Facebook’s London offices](https://www.google.co.uk/maps/place/Facebook+London/@51.5257892,-0.142239,17z/data=!3m1!4b1!4m5!3m4!1s0x487604ccdc5b4b3f:0x683757fbe5e59ea4!8m2!3d51.5257892!4d-0.1400503)\n",
+            "spans": []
+          }]
+        },
+        "timestamp": {
+          "type": "Timestamp",
+          "value": "2016-06-24T15:00:00+0000"
+        },
+        "externalLinks": {
+          "type": "Group",
+          "value": [{
+            "label": {
+              "type": "Text",
+              "value": "For more info please visit the meetup page"
+            },
+            "link": {
+              "type": "Text",
+              "value": "http://www.meetup.com/London-React-User-Group/events/230114076/"
+            }
+          }]
+        }
+      }
+    }
+  }],
+  "version": "b7f4f88",
+  "license": "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+}

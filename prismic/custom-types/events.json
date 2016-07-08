@@ -90,6 +90,22 @@
           }
         }
       }
+    },
+    "talks" : {
+      "type" : "Group",
+      "fieldset" : "Event Talks",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "talk" ],
+              "placeholder" : "Link to a talk"
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,53 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "name" : {
+      "type" : "Text",
+      "fieldset" : "Name",
+      "config" : {
+        "label" : "Name"
+      }
+    },
+    "company" : {
+      "type" : "Text",
+      "fieldset" : "Company",
+      "config" : {
+        "label" : "Company"
+      }
+    },
+    "twitterHandle" : {
+      "type" : "Text",
+      "fieldset" : "Twitter Handle",
+      "config" : {
+        "label" : "Twitter Handle"
+      }
+    },
+    "githubHandle" : {
+      "type" : "Text",
+      "fieldset" : "Github Handle",
+      "config" : {
+        "placeholder" : "Github Handle"
+      }
+    },
+    "blogURL" : {
+      "type" : "Text",
+      "fieldset" : "Blog URL",
+      "config" : {
+        "label" : "Blog URL"
+      }
+    },
+    "imageURL" : {
+      "type" : "Text",
+      "fieldset" : "Image URL",
+      "config" : {
+        "label" : "Image URL"
+      }
+    }
+  }
+}

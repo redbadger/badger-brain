@@ -1,0 +1,48 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "fieldset" : "Community Title",
+      "config" : {
+        "label" : "Community Title"
+      }
+    },
+    "summary" : {
+      "type" : "Text",
+      "fieldset" : "Community Summary",
+      "config" : {
+        "label" : "Community Summary"
+      }
+    },
+    "mailingListTitle" : {
+      "type" : "Text",
+      "fieldset" : "Mailing List Summary",
+      "config" : {
+        "label" : "Mailing List Summary"
+      }
+    },
+    "events" : {
+      "type" : "Group",
+      "fieldset" : "Community Events",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "event" ],
+              "placeholder" : "Link to an event"
+            }
+          }
+        }
+      }
+    }
+  }
+}

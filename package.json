@@ -8,7 +8,7 @@
     "build": "babel lib -d dist",
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/",
+    "test": "mocha lib/*",
     "commit": "commit-wizard"
   },
   "repository": {
@@ -32,6 +32,7 @@
     "express-graphql": "^0.5.3",
     "express-prismic": "^1.1.1",
     "graphql": "^0.6.0",
+    "lodash": "^4.13.1",
     "prismic.io": "^3.0.0"
   },
   "devDependencies": {

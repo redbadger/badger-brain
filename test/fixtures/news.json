@@ -1,15 +1,9 @@
 {
-  "news": [{
+  "allNews": [{
     "id": "123",
     "slug": "cain-discusses-motivating-staff-beyond-the-carrot-and-stick-of-cold-hard-cash.",
     "title": "Cain discusses motivating staff, beyond the ‘carrot and stick’ of cold hard cash.",
-    "datetime": {
-      "iso": "2016-02-02T12:00:00+0000",
-      "date": "02",
-      "month": "02",
-      "monthSym": "Feb",
-      "year": "2016"
-    },
+    "datetime": "2016-02-02T12:00:00+0000",
     "strapline": "Red Badger CEO Cain Ullah explains how he and the other Founders learned from their own experience to build incentives for Red Badger that go beyond the impersonal ‘reward’ of financial bonuses",
     "internalLinks": [{
       "title": "More by Cain",
@@ -28,13 +22,7 @@
     "id": "456",
     "slug": "red-badger-shortlisted-for-employee-engagement-award",
     "title": "Red Badger Shortlisted for Employee Engagement Award!",
-    "datetime": {
-      "iso": "2016-02-10T12:00:00+0000",
-      "date": "10",
-      "month": "02",
-      "monthSym": "Feb",
-      "year": "2016"
-    },
+    "datetime": "2016-02-10T12:00:00+0000",
     "strapline": "We are really proud to announce that we’ve been shortlisted for the 2016 Employee Engagement Awards in the category Employee Recognition & Reward.",
     "internalLinks": [],
     "externalLinks": [{

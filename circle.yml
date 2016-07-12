@@ -22,8 +22,3 @@ deployment:
     branch: master
     commands:
       - sudo bash ./bin/deploy.sh staging
-
-  live:
-    tag: /v[0-9]+(\.[0-9]+)*/
-    commands:
-      - sudo bash ./bin/deploy.sh live $CIRCLE_TAG

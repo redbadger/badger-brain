@@ -1,8 +1,15 @@
 # Change Log
 
-## [Unreleased](https://github.com/redbadger/badger-brain/tree/HEAD)
+## [v0.5.0](https://github.com/redbadger/badger-brain/tree/v0.5.0) (2016-07-12)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.4.0...v0.5.0)
 
-[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.3.1...HEAD)
+**Merged pull requests:**
+
+- Clean up some object indexing with Ramda [\#36](https://github.com/redbadger/badger-brain/pull/36) ([lpil](https://github.com/lpil))
+- Add event end datetime [\#29](https://github.com/redbadger/badger-brain/pull/29) ([chris-goodchild](https://github.com/chris-goodchild))
+
+## [v0.4.0](https://github.com/redbadger/badger-brain/tree/v0.4.0) (2016-07-08)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.3.1...v0.4.0)
 
 **Merged pull requests:**
 

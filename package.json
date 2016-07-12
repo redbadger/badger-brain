@@ -33,7 +33,8 @@
     "express-prismic": "^1.1.1",
     "graphql": "^0.6.0",
     "lodash": "^4.13.1",
-    "prismic.io": "^3.0.0"
+    "prismic.io": "^3.0.0",
+    "ramda": "^0.21.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

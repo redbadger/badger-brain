@@ -36,16 +36,15 @@
     },
     "timestamp" : {
       "type" : "Timestamp",
-      "fieldset" : "Start date and time",
+      "fieldset" : "Date and time",
       "config" : {
-        "label" : "Event start time"
+        "label" : "Start date and time"
       }
     },
     "timestampEnd" : {
       "type" : "Timestamp",
-      "fieldset" : "End date and time (for multi-day events)",
       "config" : {
-        "label" : "Event end time"
+        "label" : "End date and time"
       }
     },
     "address" : {

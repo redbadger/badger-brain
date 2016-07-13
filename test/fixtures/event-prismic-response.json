@@ -1,0 +1,131 @@
+{
+  "id": "V3-PjyMAAF0n2y3Q",
+  "uid": "react-london-july-meetup",
+  "type": "event",
+  "href": "https://rb-website-stage.prismic.io/api/documents/search?ref=V4Y7ciMAAICj9eD-&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22V3-PjyMAAF0n2y3Q%22%29+%5D%5D",
+  "tags": [],
+  "slug": "react-london-july-meetup",
+  "slugs": [
+    "react-london-july-meetup"
+  ],
+  "data": {
+    "event.title": {
+      "type": "Text",
+      "value": "React London July Meetup"
+    },
+    "event.strapline": {
+      "type": "Text",
+      "value": "Awesome meetup"
+    },
+    "event.body": {
+      "type": "StructuredText",
+      "value": [
+        {
+          "type": "paragraph",
+          "text": "With description",
+          "spans": []
+        }
+      ]
+    },
+    "event.timestamp": {
+      "type": "Timestamp",
+      "value": "2016-07-27T23:00:00+0000"
+    },
+    "event.address": {
+      "type": "Text",
+      "value": "Skills Matter, CodeNode, 10 South Place, London EC2M 7EB"
+    },
+    "event.talks": {
+      "type": "Group",
+      "value": [
+        {
+          "data": {
+            "type": "Link.document",
+            "value": {
+              "document": {
+                "id": "V3-t-SMAALE426eq",
+                "type": "talk",
+                "tags": [],
+                "slug": "graphql-for-beginners",
+                "uid": "GraphQL for beginners"
+              },
+              "isBroken": false
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fragments": {
+    "event.title": {
+      "value": "React London July Meetup"
+    },
+    "event.strapline": {
+      "value": "Awesome meetup"
+    },
+    "event.body": {
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "With description",
+          "spans": []
+        }
+      ]
+    },
+    "event.timestamp": {
+      "value": "2016-07-27T23:00:00.000Z"
+    },
+    "event.address": {
+      "value": "Skills Matter, CodeNode, 10 South Place, London EC2M 7EB"
+    },
+    "event.talks": {
+      "value": [
+        {
+          "data": {
+            "data": {
+              "type": "Link.document",
+              "value": {
+                "document": {
+                  "id": "V3-t-SMAALE426eq",
+                  "type": "talk",
+                  "tags": [],
+                  "slug": "graphql-for-beginners",
+                  "uid": "GraphQL for beginners"
+                },
+                "isBroken": false
+              }
+            }
+          },
+          "fragments": {
+            "data": {
+              "value": {
+                "document": {
+                  "id": "V3-t-SMAALE426eq",
+                  "type": "talk",
+                  "tags": [],
+                  "slug": "graphql-for-beginners",
+                  "uid": "GraphQL for beginners"
+                },
+                "isBroken": false
+              },
+              "document": {
+                "id": "V3-t-SMAALE426eq",
+                "type": "talk",
+                "tags": [],
+                "slug": "graphql-for-beginners",
+                "uid": "GraphQL for beginners"
+              },
+              "id": "V3-t-SMAALE426eq",
+              "uid": "GraphQL for beginners",
+              "tags": [],
+              "slug": "graphql-for-beginners",
+              "type": "talk",
+              "fragments": {},
+              "isBroken": false
+            }
+          }
+        }
+      ]
+    }
+  }
+}

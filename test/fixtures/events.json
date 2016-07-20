@@ -37,8 +37,10 @@
       },
       "location": {
         "address": "17 Mulberry Lane",
-        "latitude": "51.518550762323734",
-        "longitude": "-0.08610963821411133"
+        "coordinates": {
+          "latitude": "51.518550762323734",
+          "longitude": "-0.08610963821411133"
+        }
       }
     },
     {
@@ -64,8 +66,10 @@
       },
       "location": {
         "address": "12 Chocolate Street",
-        "latitude": "51.518550762323734",
-        "longitude": "-0.08610963821411133"
+        "coordinates": {
+          "latitude": "51.518550762323734",
+          "longitude": "-0.08610963821411133"
+        }
       }
     }
   ]

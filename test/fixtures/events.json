@@ -34,6 +34,13 @@
         "monthSym": "Jul",
         "month": "07",
         "year": "2013"
+      },
+      "location": {
+        "address": "17 Mulberry Lane",
+        "coordinates": {
+          "latitude": "51.518550762323734",
+          "longitude": "-0.08610963821411133"
+        }
       }
     },
     {
@@ -56,6 +63,13 @@
         "monthSym": "Jun",
         "month": "06",
         "year": "2016"
+      },
+      "location": {
+        "address": "12 Chocolate Street",
+        "coordinates": {
+          "latitude": "51.518550762323734",
+          "longitude": "-0.08610963821411133"
+        }
       }
     }
   ]

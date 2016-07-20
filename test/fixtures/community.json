@@ -4,7 +4,8 @@
       {
         "id": "V34vMyMAAMke1asn",
         "title": "React London",
-        "mailingListTitle": "Get ticket reminders and event information about React London events straight to your inbox."
+        "mailingListTitle": "Get ticket reminders and event information about React London events straight to your inbox.",
+        "mailingListSummary": "This is an example Mailing List Summary"
       }
     ]
   }

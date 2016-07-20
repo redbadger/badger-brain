@@ -23,6 +23,13 @@
     },
     "mailingListTitle" : {
       "type" : "Text",
+      "fieldset" : "Mailing List Title",
+      "config" : {
+        "label" : "Mailing List Title"
+      }
+    },
+    "mailingListSummary" : {
+      "type" : "Text",
       "fieldset" : "Mailing List Summary",
       "config" : {
         "label" : "Mailing List Summary"

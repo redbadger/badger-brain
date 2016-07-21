@@ -82,7 +82,7 @@
       "fieldset" : "Event Schedule",
       "config" : {
         "fields" : {
-          "time" : {
+          "datetime" : {
             "type" : "Timestamp",
             "config" : {
               "placeholder" : "Timestamp"

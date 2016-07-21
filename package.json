@@ -9,6 +9,7 @@
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
     "test": "mocha lib/*",
+    "test-watch": "mocha lib/* --watch",
     "commit": "commit-wizard"
   },
   "repository": {

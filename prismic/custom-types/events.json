@@ -77,6 +77,26 @@
         }
       }
     },
+    "schedule" : {
+      "type" : "Group",
+      "fieldset" : "Event Schedule",
+      "config" : {
+        "fields" : {
+          "datetime" : {
+            "type" : "Timestamp",
+            "config" : {
+              "placeholder" : "Timestamp"
+            }
+          },
+          "text" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "The schedule item text"
+            }
+          }
+        }
+      }
+    },
     "internalLinks" : {
       "type" : "Group",
       "fieldset" : "Internal links",

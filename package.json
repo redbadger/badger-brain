@@ -8,7 +8,8 @@
     "build": "babel lib -d dist",
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/*",
+    "test": "mocha",
+    "test-watch": "mocha --watch --reporter min",
     "commit": "commit-wizard"
   },
   "repository": {

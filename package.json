@@ -9,6 +9,7 @@
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
     "test": "mocha lib/*",
+    "test-watch": "mocha lib/* --watch",
     "commit": "commit-wizard"
   },
   "repository": {
@@ -54,7 +55,8 @@
     "nock": "^8.0.0",
     "nodemon": "^1.9.2",
     "pre-git": "^3.9.1",
-    "sinon": "^1.17.4"
+    "sinon": "^1.17.4",
+    "supertest": "^1.2.0"
   },
   "config": {
     "pre-git": {

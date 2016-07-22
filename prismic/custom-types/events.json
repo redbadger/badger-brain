@@ -97,6 +97,26 @@
         }
       }
     },
+    "sponsors" : {
+      "type" : "Group",
+      "fieldset" : "Event Sponsors",
+      "config" : {
+        "fields" : {
+          "websiteURL" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Website URL"
+            }
+          },
+          "imageURL" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Image URL"
+            }
+          }
+        }
+      }
+    },
     "internalLinks" : {
       "type" : "Group",
       "fieldset" : "Internal links",

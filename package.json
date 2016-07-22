@@ -8,7 +8,7 @@
     "build": "babel lib -d dist",
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/*",
+    "test": "mocha 'lib/**/*.spec.js'",
     "commit": "commit-wizard"
   },
   "repository": {
@@ -53,8 +53,7 @@
     "mocha-trumpet-reporter": "0.0.3",
     "nock": "^8.0.0",
     "nodemon": "^1.9.2",
-    "pre-git": "^3.9.1",
-    "sinon": "^1.17.4"
+    "pre-git": "^3.9.1"
   },
   "config": {
     "pre-git": {

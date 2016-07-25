@@ -5,14 +5,26 @@
     "title": "Cain discusses motivating staff, beyond the ‘carrot and stick’ of cold hard cash.",
     "datetime": "2016-02-02T12:00:00+0000",
     "strapline": "Red Badger CEO Cain Ullah explains how he and the other Founders learned from their own experience to build incentives for Red Badger that go beyond the impersonal ‘reward’ of financial bonuses",
-    "internalLinks": [{
-      "title": "More by Cain",
-      "url": "/about-us/people/cain-ullah"
-    }],
-    "externalLinks": [{
-      "title": "Read the article here",
-      "url": "http://www.sodareport.com/talent/incentivizing-your-staff/"
-    }],
+    "internalLinks": [
+      {
+        "title": {
+          "value": "Read the article here"
+        },
+        "url": {
+          "value": "http://www.sodareport.com/talent/incentivizing-your-staff/"
+        }
+      }
+    ],
+    "externalLinks": [
+      {
+        "title": {
+          "value": "More by Cain"
+        },
+        "url": {
+          "value": "/about-us/people/cain-ullah"
+        }
+      }
+    ],
     "body": [{
       "type": "paragraph",
       "text": "People still believe money talks. However simply money doesn't pay off. Motivating staff means to get beyond money. But what is the root of improving motivation? How can you encourage and support your staff in meeting their needs so that they can promote engagement, creativity and passion?\n\nRead Cain's article in the SoDA report and find out about the real key elements to a better staff performance and what Red Badger implemented to attract and motivate their staff.\n"
@@ -24,11 +36,26 @@
     "title": "Red Badger Shortlisted for Employee Engagement Award!",
     "datetime": "2016-02-10T12:00:00+0000",
     "strapline": "We are really proud to announce that we’ve been shortlisted for the 2016 Employee Engagement Awards in the category Employee Recognition & Reward.",
-    "internalLinks": [],
-    "externalLinks": [{
-      "title": "Find out more about the finalists",
-      "url": "http://e-x-a.co.uk/finalists-announced/"
-    }],
+    "internalLinks": [
+      {
+        "title": {
+          "value": "More by Cain"
+        },
+        "url": {
+          "value": "/about-us/people/cain-ullah"
+        }
+      }
+    ],
+    "externalLinks": [
+      {
+        "title": {
+          "value": "Read the article here"
+        },
+        "url": {
+          "value": "http://www.sodareport.com/talent/incentivizing-your-staff/"
+        }
+      }
+    ],
     "body": [{
       "type": "paragraph",
       "text": "Right from the start, founders [Cain](http://red-badger.com/about-us/people/cain-ullah/), [Stu](http://red-badger.com/about-us/people/stuart-harris/)\n and [Dave](http://red-badger.com/about-us/people/david-wynne/) wanted to create a workplace that was fun and friendly as well as doing cutting edge work for great clients. Just five years later, we have been acknowledged as an example of exactly how to do that!\n\nOur entry included details of how we make sure we acknowledge the extra effort and energy that people put into their jobs and make it more than fulfilling their job description.\n\nThe finalists' day and ceremony is on May 4.\n\n\n\n\nIf all this makes you want to join the team, take a look at our\n[jobs page](http://www-staging.red-badger.com/about-us/join-us/)\n"

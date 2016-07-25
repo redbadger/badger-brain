@@ -6,6 +6,8 @@
       "title": "David Wynne and Joe Stanton talking at London Node User Group",
       "slug": "london-node-user-group",
       "strapline": "BBC Now ...that’s what I call Node!",
+      "schedule": [],
+      "sponsors": [],
       "externalLinks": [
         {
           "title": "London Node.js User Group",
@@ -54,6 +56,50 @@
         {
           "title": "For more information please visit the conference page",
           "url": "https://www.react-europe.org/#about"
+        }
+      ],
+      "schedule": [
+        {
+          "datetime": {
+            "type": "String",
+            "value": "2016-07-25T23:00:00+0000"
+          },
+          "text":  {
+            "type": "String",
+            "value": "Doors open for pizza and beers"
+          }
+        },
+        {
+          "datetime": {
+            "type": "String",
+            "value": "2016-07-25T23:00:00+0000"
+          },
+          "text":  {
+            "type": "String",
+            "value": "Intro from Stu"
+          }
+        },
+        {
+          "datetime": {
+            "type": "String",
+            "value": "2016-07-25T23:00:00+0000"
+          },
+          "text": {
+            "type": "String",
+            "value": "Various speakers chat"
+          }
+        }
+      ],
+      "sponsors": [
+        {
+          "websiteURL":  {
+            "type": "String",
+            "value": "http://red-badger.com"
+          },
+          "imageURL":  {
+            "type": "String",
+            "value": "http://react.london/img/SVG/Badger_Roundel.svg"
+          }
         }
       ],
       "body": "The conference aims to give talks that inspire and explore new futuristic ideas dealing with all the techs we enjoy. ReactEurope is also a great occasion to socialise, hack together, taste delicious food and have fun in the beautiful city of Paris.",

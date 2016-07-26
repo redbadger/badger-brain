@@ -99,6 +99,10 @@
           "imageURL":  {
             "type": "String",
             "value": "http://react.london/img/SVG/Badger_Roundel.svg"
+          },
+          "name": {
+            "type": "String",
+            "value": "Red Badger"
           }
         }
       ],

@@ -113,6 +113,12 @@
             "config" : {
               "placeholder" : "Image URL"
             }
+          },
+          "name" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Name of the sponsor"
+            }
           }
         }
       }

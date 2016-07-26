@@ -8,7 +8,7 @@
     "build": "babel lib -d dist",
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha 'lib/**/*.spec.js'",
+    "test": "mocha lib/*",
     "commit": "commit-wizard"
   },
   "repository": {

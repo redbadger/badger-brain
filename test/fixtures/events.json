@@ -28,7 +28,6 @@
           "url": "/about-us/people/joe-stanton"
         }
       ],
-      "eventActionLink": "foo.com",
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",
       "ticketsAvailiable": false,
       "featureImageFilename": "profile_DW_thumb.jpg",
@@ -61,7 +60,6 @@
           "url": "https://www.react-europe.org/#about"
         }
       ],
-      "eventActionLink": "foo.com",
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",
       "ticketsAvailiable": false,
       "schedule": [

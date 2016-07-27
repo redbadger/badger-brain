@@ -61,12 +61,6 @@
         "options" : [ false, true ]
       }
     },
-    "eventActionLink" : {
-      "type" : "Text",
-      "config" : {
-        "placeholder" : "Link URL"
-      }
-    },
     "address" : {
       "type" : "Text",
       "fieldset" : "Event location",

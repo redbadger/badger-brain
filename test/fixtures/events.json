@@ -2,7 +2,7 @@
   "events": [
     {
       "id": "123",
-      "tags": ["London Node", "BBC Now"],
+      "tags": ["London Node", "BBC Now", "meetup"],
       "title": "David Wynne and Joe Stanton talking at London Node User Group",
       "slug": "london-node-user-group",
       "strapline": "BBC Now ...that’s what I call Node!",
@@ -47,7 +47,7 @@
     },
     {
       "id": "456",
-      "tags": [],
+      "tags": ["conf", "meetup"],
       "title": "ReactEurope 2016",
       "slug": "react-europe-2016",
       "strapline": "Red Badger are super excited to be sponsoring ReactEurope for the second year running!",

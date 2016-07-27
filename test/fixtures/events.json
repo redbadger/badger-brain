@@ -10,7 +10,8 @@
       "sponsors": [],
       "status": {
         "enum": "RELEASED",
-        "summary": "A foo went to a bar"
+        "summary": "A foo went to a bar",
+        "link": "http://foobar.com"
       },
       "externalLinks": [
         {
@@ -58,7 +59,8 @@
       "featureImageFilename": "react-europe.jpg",
       "status": {
         "enum": null,
-        "summary": null
+        "summary": null,
+        "link": null
       },
       "externalLinks": [
         {

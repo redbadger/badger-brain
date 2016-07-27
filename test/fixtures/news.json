@@ -1,6 +1,7 @@
 {
   "allNews": [{
     "id": "123",
+    "tags": ["meetup"],
     "slug": "cain-discusses-motivating-staff-beyond-the-carrot-and-stick-of-cold-hard-cash.",
     "title": "Cain discusses motivating staff, beyond the ‘carrot and stick’ of cold hard cash.",
     "datetime": "2016-02-02T12:00:00+0000",
@@ -32,6 +33,7 @@
     "featureImageFilename": "soda-report2.jpg"
   }, {
     "id": "456",
+    "tags": ["awards"],
     "slug": "red-badger-shortlisted-for-employee-engagement-award",
     "title": "Red Badger Shortlisted for Employee Engagement Award!",
     "datetime": "2016-02-10T12:00:00+0000",

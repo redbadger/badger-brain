@@ -1,5 +1,23 @@
 # Change Log
 
+## [v0.6.0](https://github.com/redbadger/badger-brain/tree/v0.6.0) (2016-07-26)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.5.1...v0.6.0)
+
+**Merged pull requests:**
+
+- Adding sponsor type [\#49](https://github.com/redbadger/badger-brain/pull/49) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Added schedule to event type [\#44](https://github.com/redbadger/badger-brain/pull/44) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Added address field to event type [\#42](https://github.com/redbadger/badger-brain/pull/42) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Added featuredEvent property to community type [\#41](https://github.com/redbadger/badger-brain/pull/41) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Enabling New Relic APM monitoring for Badger Brain [\#38](https://github.com/redbadger/badger-brain/pull/38) ([asavin](https://github.com/asavin))
+
+## [v0.5.1](https://github.com/redbadger/badger-brain/tree/v0.5.1) (2016-07-13)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.5.0...v0.5.1)
+
+**Merged pull requests:**
+
+- Event end date sanitation [\#37](https://github.com/redbadger/badger-brain/pull/37) ([asavin](https://github.com/asavin))
+
 ## [v0.5.0](https://github.com/redbadger/badger-brain/tree/v0.5.0) (2016-07-12)
 [Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.4.0...v0.5.0)
 

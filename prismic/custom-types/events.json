@@ -77,6 +77,52 @@
         }
       }
     },
+    "schedule" : {
+      "type" : "Group",
+      "fieldset" : "Event Schedule",
+      "config" : {
+        "fields" : {
+          "datetime" : {
+            "type" : "Timestamp",
+            "config" : {
+              "placeholder" : "Timestamp"
+            }
+          },
+          "text" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "The schedule item text"
+            }
+          }
+        }
+      }
+    },
+    "sponsors" : {
+      "type" : "Group",
+      "fieldset" : "Event Sponsors",
+      "config" : {
+        "fields" : {
+          "websiteURL" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Website URL"
+            }
+          },
+          "imageURL" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Image URL"
+            }
+          },
+          "name" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Name of the sponsor"
+            }
+          }
+        }
+      }
+    },
     "internalLinks" : {
       "type" : "Group",
       "fieldset" : "Internal links",

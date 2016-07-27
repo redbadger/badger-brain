@@ -47,6 +47,33 @@
         "label" : "End date and time"
       }
     },
+    "ticketReleaseDate" : {
+      "type" : "Timestamp",
+      "config" : {
+        "placeholder" : "Ticket release date"
+      }
+    },
+    "status" : {
+      "type" : "Select",
+      "fieldset" : "The status of the event",
+      "config" : {
+        "label" : "Status",
+        "options" : [ "RELEASED", "SOLD_OUT", "LIVE", "ENDED" ],
+        "placeholder" : "PRE_RELEASE"
+      }
+    },
+    "link" : {
+      "type" : "Text",
+      "config" : {
+        "placeholder" : "Link URL"
+      }
+    },
+    "summary" : {
+      "type" : "Text",
+      "config" : {
+        "placeholder" : "Summary"
+      }
+    },
     "address" : {
       "type" : "Text",
       "fieldset" : "Event location",

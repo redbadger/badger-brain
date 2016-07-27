@@ -8,6 +8,11 @@
       "strapline": "BBC Now ...that’s what I call Node!",
       "schedule": [],
       "sponsors": [],
+      "status": {
+        "enum": "RELEASED",
+        "summary": "A foo went to a bar",
+        "link": "http://foobar.com"
+      },
       "externalLinks": [
         {
           "title": "London Node.js User Group",
@@ -52,6 +57,11 @@
       "slug": "react-europe-2016",
       "strapline": "Red Badger are super excited to be sponsoring ReactEurope for the second year running!",
       "featureImageFilename": "react-europe.jpg",
+      "status": {
+        "enum": null,
+        "summary": null,
+        "link": null
+      },
       "externalLinks": [
         {
           "title": "For more information please visit the conference page",

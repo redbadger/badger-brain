@@ -47,6 +47,26 @@
         "label" : "End date and time"
       }
     },
+    "ticketReleaseDate" : {
+      "type" : "Timestamp",
+      "config" : {
+        "placeholder" : "Ticket release date"
+      }
+    },
+    "ticketsAvailiable" : {
+      "type" : "Select",
+      "fieldset" : "A boolean showing whether the tickets are availiable",
+      "config" : {
+        "label" : "Tickets Availiable",
+        "options" : [ false, true ]
+      }
+    },
+    "eventActionLink" : {
+      "type" : "Text",
+      "config" : {
+        "placeholder" : "Link URL"
+      }
+    },
     "address" : {
       "type" : "Text",
       "fieldset" : "Event location",

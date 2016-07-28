@@ -10,22 +10,39 @@
       "sponsors": [],
       "externalLinks": [
         {
-          "title": "London Node.js User Group",
-          "url": "http://lnug.org/"
+          "title": {
+            "value": "London Node.js User Group"
+          },
+          "url": {
+            "value": "http://lnug.org/"
+          },
+          "type": {
+            "value": "STREAM"
+          }
         },
         {
-          "title": "Attend or track the event on Lanyrd",
-          "url": "http://lanyrd.com/2013/lnug-july/"
+          "title": {
+            "value": "Attend or track the event on Lanyrd"
+          },
+          "url": {
+            "value": "http://lanyrd.com/2013/lnug-july/"
+          },
+          "type": {
+            "value": "OTHER"
+          }
         }
       ],
       "internalLinks": [
         {
-          "title": "Who is David?",
-          "url": "/about-us/people/david-wynne"
-        },
-        {
-          "title": "Who is Joe?",
-          "url": "/about-us/people/joe-stanton"
+          "title": {
+            "value": "Who is David?"
+          },
+          "url": {
+            "value": "/about-us/people/david-wynne"
+          },
+          "type": {
+            "value": "OTHER"
+          }
         }
       ],
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",
@@ -56,8 +73,15 @@
       "featureImageFilename": "react-europe.jpg",
       "externalLinks": [
         {
-          "title": "For more information please visit the conference page",
-          "url": "https://www.react-europe.org/#about"
+          "title": {
+            "value": "For more information please visit the conference page"
+          },
+          "url": {
+            "value": "https://www.react-europe.org/#about"
+          },
+          "type": {
+            "value": "EVENT"
+          }
         }
       ],
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",

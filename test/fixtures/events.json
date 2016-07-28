@@ -46,7 +46,7 @@
         }
       ],
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",
-      "ticketsAvailiable": false,
+      "ticketsAvailable": false,
       "featureImageFilename": "profile_DW_thumb.jpg",
       "body": "The Red Badger tech team talk about how Node powered the new BBC Now homepage pilot.",
       "datetime": {
@@ -85,7 +85,7 @@
         }
       ],
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",
-      "ticketsAvailiable": false,
+      "ticketsAvailable": false,
       "schedule": [
         {
           "datetime": {

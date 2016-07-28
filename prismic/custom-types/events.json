@@ -53,11 +53,11 @@
         "label" : "Ticket release date"
       }
     },
-    "ticketsAvailiable" : {
+    "ticketsAvailable" : {
       "type" : "Select",
       "fieldset" : "A boolean showing whether the tickets are availiable",
       "config" : {
-        "label" : "Tickets Availiable",
+        "label" : "Tickets Available",
         "options" : [ false, true ]
       }
     },

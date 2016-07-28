@@ -47,6 +47,20 @@
         "label" : "End date and time"
       }
     },
+    "ticketReleaseDate" : {
+      "type" : "Timestamp",
+      "config" : {
+        "label" : "Ticket release date"
+      }
+    },
+    "ticketsAvailable" : {
+      "type" : "Select",
+      "fieldset" : "A boolean showing whether the tickets are availiable",
+      "config" : {
+        "label" : "Tickets Available",
+        "options" : [ false, true ]
+      }
+    },
     "address" : {
       "type" : "Text",
       "fieldset" : "Event location",
@@ -72,6 +86,15 @@
             "type" : "Text",
             "config" : {
               "placeholder" : "Link URL"
+            }
+          },
+          "type" : {
+            "type" : "Select",
+            "fieldset" : "A type of link",
+            "config" : {
+              "label" : "Link Type",
+              "options" : [ "STREAM", "EVENT" ],
+              "placeholder" : "OTHER"
             }
           }
         }
@@ -138,6 +161,15 @@
             "type" : "Text",
             "config" : {
               "placeholder" : "Link URL"
+            }
+          },
+          "type" : {
+            "type" : "Select",
+            "fieldset" : "A type of link",
+            "config" : {
+              "label" : "Link Type",
+              "options" : [ "STREAM", "EVENT" ],
+              "placeholder" : "OTHER"
             }
           }
         }

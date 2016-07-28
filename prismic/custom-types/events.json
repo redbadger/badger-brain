@@ -61,6 +61,14 @@
         "options" : [ false, true ]
       }
     },
+    "waitingListOpen" : {
+      "type" : "Select",
+      "fieldset" : "A boolean showing whether the waiting list is open",
+      "config" : {
+        "label" : "Waiting List Open",
+        "options" : [ false, true ]
+      }
+    },
     "address" : {
       "type" : "Text",
       "fieldset" : "Event location",

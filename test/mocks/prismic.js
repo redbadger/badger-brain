@@ -9,11 +9,6 @@ const queryify = (object) => {
 export default class PrismicMock {
   constructor(repo = 'https://rb-website-stage.prismic.io') {
     this.repo = repo;
-
-    nock.emitter.on('no match', (req) => {
-      // eslint-disable-next-line no-console
-      console.error('Nock no match for URL request', req);
-    });
   }
 
   mockApi() {

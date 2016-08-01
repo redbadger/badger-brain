@@ -8,7 +8,8 @@
     "build": "babel lib -d dist",
     "lint": "eslint lib/",
     "serve": "node dist/index.js",
-    "test": "mocha lib/*",
+    "test": "mocha",
+    "test-watch": "mocha --watch --reporter min",
     "commit": "commit-wizard"
   },
   "repository": {
@@ -49,7 +50,7 @@
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.8.1",
     "injectr": "^0.5.1",
-    "mocha": "^2.5.3",
+    "mocha": "^3.0.0",
     "mocha-trumpet-reporter": "0.0.3",
     "nock": "^8.0.0",
     "nodemon": "^1.9.2",

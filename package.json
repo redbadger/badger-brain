@@ -55,7 +55,8 @@
     "nock": "^8.0.0",
     "nodemon": "^1.9.2",
     "pre-git": "^3.9.1",
-    "sinon": "^1.17.4"
+    "sinon": "^1.17.4",
+    "supertest": "^2.0.0"
   },
   "config": {
     "pre-git": {

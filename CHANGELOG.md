@@ -1,5 +1,14 @@
 # Change Log
 
+## [v0.7.0](https://github.com/redbadger/badger-brain/tree/v0.7.0) (2016-07-28)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.6.0...v0.7.0)
+
+**Merged pull requests:**
+
+- Added waitingListOpen boolean to event type [\#52](https://github.com/redbadger/badger-brain/pull/52) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Added ticket release date, ticket available and action link to event [\#51](https://github.com/redbadger/badger-brain/pull/51) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Tags [\#40](https://github.com/redbadger/badger-brain/pull/40) ([asavin](https://github.com/asavin))
+
 ## [v0.6.0](https://github.com/redbadger/badger-brain/tree/v0.6.0) (2016-07-26)
 [Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.5.1...v0.6.0)
 

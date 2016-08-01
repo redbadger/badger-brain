@@ -101,7 +101,7 @@
             "fieldset" : "A type of link",
             "config" : {
               "label" : "Link Type",
-              "options" : [ "STREAM", "EVENT" ],
+              "options" : [ "STREAM", "TICKET" ],
               "placeholder" : "OTHER"
             }
           }
@@ -176,7 +176,7 @@
             "fieldset" : "A type of link",
             "config" : {
               "label" : "Link Type",
-              "options" : [ "STREAM", "EVENT" ],
+              "options" : [ "STREAM", "TICKET" ],
               "placeholder" : "OTHER"
             }
           }

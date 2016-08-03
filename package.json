@@ -10,7 +10,8 @@
     "serve": "node dist/index.js",
     "test": "mocha",
     "test-watch": "mocha --watch --reporter min",
-    "commit": "commit-wizard"
+    "commit": "commit-wizard",
+    "test-with-coverage": "istanbul cover ./node_modules/.bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -46,10 +47,12 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
     "chai": "^3.5.0",
+    "coveralls": "^2.11.12",
     "eslint": "^2.12.0",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.8.1",
     "injectr": "^0.5.1",
+    "istanbul": "^1.0.0-alpha.2",
     "mocha": "^3.0.0",
     "mocha-trumpet-reporter": "0.0.3",
     "nock": "^8.0.0",

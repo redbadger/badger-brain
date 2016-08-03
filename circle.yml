@@ -15,7 +15,9 @@ dependencies:
 test:
   override:
     - npm run lint
-    - npm test
+    - npm run test-with-coverage
+  post:
+    - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
 
 deployment:
   staging:

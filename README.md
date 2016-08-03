@@ -2,7 +2,7 @@ Badger Brain
 ============
 
 [![CircleCI](https://circleci.com/gh/redbadger/badger-brain.svg?style=shield)](https://circleci.com/gh/redbadger/badger-brain)
-[![Coverage Status](https://coveralls.io/repos/github/redbadger/badger-brain/badge.svg?branch=master)](https://coveralls.io/github/redbadger/badger-brain?branch=master)
+[![Test Coverage](https://coveralls.io/repos/github/redbadger/badger-brain/badge.svg?branch=master)](https://coveralls.io/github/redbadger/badger-brain?branch=master)
 [![Code Climate](https://codeclimate.com/github/redbadger/badger-brain/badges/gpa.svg)](https://codeclimate.com/github/redbadger/badger-brain)
 
 GraphQL server for all Red Badger related data.

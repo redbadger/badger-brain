@@ -59,22 +59,6 @@
           }
         }
       }
-    },
-    "featuredEvents" : {
-      "type" : "Group",
-      "fieldset" : "Featured Community Events",
-      "config" : {
-        "fields" : {
-          "data" : {
-            "type" : "Link",
-            "config" : {
-              "select" : "document",
-              "customtypes" : [ "event" ],
-              "placeholder" : "Link to an event"
-            }
-          }
-        }
-      }
     }
   }
 }

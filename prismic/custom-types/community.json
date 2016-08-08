@@ -63,9 +63,9 @@
               "label" : "Display Level",
               "options" : [
                 "Featured",
-                "Highlighted",
-                "Regular"
-              ]
+                "Highlighted"
+              ],
+              "placeholder" : "Regular"
             }
           }
         }

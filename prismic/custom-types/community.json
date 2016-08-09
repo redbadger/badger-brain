@@ -56,6 +56,17 @@
               "customtypes" : [ "event" ],
               "placeholder" : "Link to an event"
             }
+          },
+          "displayLevel": {
+            "type" : "Select",
+            "config" : {
+              "label" : "Display Level",
+              "options" : [
+                "Featured",
+                "Highlighted"
+              ],
+              "placeholder" : "Regular"
+            }
           }
         }
       }

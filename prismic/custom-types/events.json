@@ -9,7 +9,7 @@
     },
     "title" : {
       "type" : "Text",
-      "fieldset" : "Title",
+      "fieldset" : "Details",
       "config" : {
         "label" : "Title of Event"
       }
@@ -24,6 +24,14 @@
       "type" : "Text",
       "config" : {
         "label" : "Feature Image"
+      }
+    },
+    "eventType" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Event Type",
+        "options" : [ "Meetup", "Conference" ],
+        "placeholder": "Other"
       }
     },
     "body" : {

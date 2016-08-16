@@ -14,14 +14,6 @@
         "label" : "Partner Name"
       }
     },
-    "level" : {
-      "type" : "Select",
-      "config" : {
-        "label" : "Partner Level",
-        "options" : [ "Bronze", "Silver", "Gold" ],
-        "placeholder" : "Supporter"
-      }
-    },
     "description" : {
       "type" : "Text",
       "config" : {
@@ -38,20 +30,6 @@
       "type" : "Text",
       "config" : {
         "label" : "Image URL"
-      }
-    },
-    "event" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "data" : {
-            "type" : "Link",
-            "config" : {
-              "select" : "document",
-              "customtypes" : [ "event" ]
-            }
-          }
-        }
       }
     }
   }

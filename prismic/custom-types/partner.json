@@ -39,6 +39,20 @@
       "config" : {
         "label" : "Image URL"
       }
+    },
+    "event" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "event" ]
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,44 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "name" : {
+      "type" : "Text",
+      "fieldset" : "Partner Info",
+      "config" : {
+        "label" : "Partner Name"
+      }
+    },
+    "level" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Partner Level",
+        "options" : [ "Bronze", "Silver", "Gold" ],
+        "placeholder" : "Supporter"
+      }
+    },
+    "description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Description (Max 50 Characters)"
+      }
+    },
+    "partnerURL" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Partner URL"
+      }
+    },
+    "imageURL" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Image URL"
+      }
+    }
+  }
+}

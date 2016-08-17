@@ -31,6 +31,32 @@
       "config" : {
         "label" : "Image URL"
       }
+    },
+    "jobs" : {
+      "type" : "Group",
+      "fieldset" : "Partner Jobs",
+      "config" : {
+        "fields" : {
+          "title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job Title"
+            }
+          },
+          "location" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job location"
+            }
+          },
+          "description" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job description"
+            }
+          }
+        }
+      }
     }
   }
 }

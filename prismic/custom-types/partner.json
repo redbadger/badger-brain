@@ -1,0 +1,62 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "name" : {
+      "type" : "Text",
+      "fieldset" : "Partner Info",
+      "config" : {
+        "label" : "Partner Name"
+      }
+    },
+    "description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Description (Max 50 Characters)"
+      }
+    },
+    "partnerURL" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Partner URL"
+      }
+    },
+    "imageURL" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Image URL"
+      }
+    },
+    "jobs" : {
+      "type" : "Group",
+      "fieldset" : "Partner Jobs",
+      "config" : {
+        "fields" : {
+          "title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job Title"
+            }
+          },
+          "location" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job location"
+            }
+          },
+          "description" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job description"
+            }
+          }
+        }
+      }
+    }
+  }
+}

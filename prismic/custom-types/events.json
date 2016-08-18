@@ -208,6 +208,30 @@
           }
         }
       }
+    },
+    "events" : {
+      "type" : "Group",
+      "fieldset" : "Event Partners",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "partner" ],
+              "placeholder" : "Link to a partner"
+            }
+          },
+          "level" : {
+            "type" : "Select",
+            "config" : {
+              "label" : "Partner Level",
+              "options" : [ "Bronze", "Silver", "Gold" ],
+              "placeholder" : "Supporter"
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,5 +1,35 @@
 # Change Log
 
+## [v0.8.0](https://github.com/redbadger/badger-brain/tree/v0.8.0) (2016-08-18)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.7.0...v0.8.0)
+
+**Implemented enhancements:**
+
+- Fetch module cleanup [\#57](https://github.com/redbadger/badger-brain/pull/57) ([lpil](https://github.com/lpil))
+
+**Closed issues:**
+
+- "Cannot return null for non-nullable field" error [\#64](https://github.com/redbadger/badger-brain/issues/64)
+- Redirect / to /graphql [\#48](https://github.com/redbadger/badger-brain/issues/48)
+- Health check endpoint [\#47](https://github.com/redbadger/badger-brain/issues/47)
+- Tests start an instance of the server [\#35](https://github.com/redbadger/badger-brain/issues/35)
+- Changes needed for React.London [\#34](https://github.com/redbadger/badger-brain/issues/34)
+
+**Merged pull requests:**
+
+- Added job type to prismic and partner type [\#68](https://github.com/redbadger/badger-brain/pull/68) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Add partner type [\#67](https://github.com/redbadger/badger-brain/pull/67) ([pixelblend](https://github.com/pixelblend))
+- Allow users to mark events as conference events. [\#66](https://github.com/redbadger/badger-brain/pull/66) ([lpil](https://github.com/lpil))
+- Use a default value for communityEvent.displayLevel [\#65](https://github.com/redbadger/badger-brain/pull/65) ([lpil](https://github.com/lpil))
+- Fix events fetch function name [\#63](https://github.com/redbadger/badger-brain/pull/63) ([lpil](https://github.com/lpil))
+- \[WIP\] Community events have display levels [\#62](https://github.com/redbadger/badger-brain/pull/62) ([lpil](https://github.com/lpil))
+- Static analysis and documentation [\#61](https://github.com/redbadger/badger-brain/pull/61) ([lpil](https://github.com/lpil))
+- Redirect / to /graphql [\#60](https://github.com/redbadger/badger-brain/pull/60) ([lpil](https://github.com/lpil))
+- Made default option false for event type booleans [\#59](https://github.com/redbadger/badger-brain/pull/59) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Add health check endpoint [\#55](https://github.com/redbadger/badger-brain/pull/55) ([lpil](https://github.com/lpil))
+- Changed External link type from Event to ticket [\#54](https://github.com/redbadger/badger-brain/pull/54) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Decouple app running from app creation so test watcher can be used [\#53](https://github.com/redbadger/badger-brain/pull/53) ([lpil](https://github.com/lpil))
+
 ## [v0.7.0](https://github.com/redbadger/badger-brain/tree/v0.7.0) (2016-07-28)
 [Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.6.0...v0.7.0)
 

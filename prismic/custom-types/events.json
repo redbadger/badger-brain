@@ -31,7 +31,7 @@
       "config" : {
         "label" : "Event Type",
         "options" : [ "Meetup", "Conference" ],
-        "placeholder": "Other"
+        "placeholder" : "Other"
       }
     },
     "body" : {
@@ -209,7 +209,23 @@
         }
       }
     },
-    "events" : {
+    "tickets" : {
+      "type" : "Group",
+      "fieldset" : "Event Tickets",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "ticket" ],
+              "placeholder" : "link to a ticket"
+            }
+          }
+        }
+      }
+    },
+    "partners" : {
       "type" : "Group",
       "fieldset" : "Event Partners",
       "config" : {

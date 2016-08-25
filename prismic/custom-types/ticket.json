@@ -1,0 +1,37 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Title"
+      }
+    },
+    "releaseDate" : {
+      "type" : "Timestamp",
+      "config" : {
+        "label" : "Release date"
+      }
+    },
+    "price" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Price"
+      }
+    },
+    "available" : {
+      "type" : "Select",
+      "fieldset" : "A boolean showing whether this ticket is availiable",
+      "config" : {
+        "label" : "Available?",
+        "options" : [ "true" ],
+        "placeholder" : "false"
+      }
+    }
+  }
+}

@@ -54,6 +54,12 @@
             "config" : {
               "label" : "Job description"
             }
+          },
+          "jobURL" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Job URL"
+            }
           }
         }
       }

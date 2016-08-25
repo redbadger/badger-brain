@@ -31,3 +31,7 @@ dist
 .DS_Store
 .env
 coverage
+
+docs/.sass-cache
+docs/_site
+docs/Gemfile.lock

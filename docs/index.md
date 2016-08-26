@@ -26,6 +26,12 @@ Badger Brain is a public GraphQL interface providing data about Red Badger compa
 
 Purpose of the Badger Brain is to serve all public (and potentially private) information about the company to whoever might be interested to consume it. If we ever decide to include private information in the schema, that will require some sort of authentication mechanism.
 
+## Infrastructure
+
+<a href="https://docs.google.com/a/red-badger.com/drawings/d/19jeYZPGdTSUGL9KG1LDurVAyjPpdSyCNm6nADwxE8wI/edit?usp=sharing"><img src="assets/infrastructure-chart.png"></a>
+
+Workable integration is not implemented at the moment, but would be a logical step in making Badger Brain central provider for all company related data.
+
 ## Clients
 
 At the moment of writing, there are following client apps depending on Badger Brain:

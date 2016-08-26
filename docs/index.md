@@ -11,6 +11,10 @@ Live GraphiQL interface: [http://brain.red-badger.com/graphql](http://brain.red-
 
 Staging GraphiQL interface: [http://brain-staging.red-badger.com/graphql](http://brain-staging.red-badger.com/graphql)
 
+## How to update this documentation
+
+Documentation is written in markdown format and is hosted under `/docs` folder. Once the change is committed, it will be automatically deployed by Github on this site.
+
 ## Introduction and purpose
 
 Badger Brain is a GraphQL server. It has GraphiQL interface for testing and exploring the API. It is a self documented server - you can simply browse what GraphiQL has to offer, and every query or a parameter will have a description.
@@ -40,5 +44,18 @@ At the moment of writing, there are following client apps depending on Badger Br
 * [React.London](https://github.com/redbadger/react.london/)
 
 New features of Badger Brain are largely dictated by the needs of clients. It should not however implement purely client based features, but instead aim at providing unified consistent interface through all features.
+
+## Prismic schema
+
+Prismic.io at the moment our main data provider. Because Prismic itself doesn't contain any tools for schema versioning and migrations, we're hosting Prismic schema definitions here, under `/prismic`.
+
+Your responsibility as a developer is to maintain Prismic schema definitions here for versioning purposes.
+
+## Data flow
+
+Badger Brain offers read-only API, which means there is no way of posting data back to Badger Brain. It doesn't contain any mutations.
+
+
+
 
 

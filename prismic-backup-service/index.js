@@ -33,6 +33,7 @@ function getJson(url) {
 }
 
 function loop(json, metadata, funcs) {
+  console.log(json);
   return save(json, funcs).then(() => {
     const newMetadata = updateMetadata(metadata, json);
 

@@ -73,22 +73,20 @@ describe('backupPrismic', () => {
       .catch(done);
   });
 
-  it('handles error in saving', (done) => {
-    const responses = [
-      {
-        page: 1,
-        results_per_page: 100,
-        results_size: 100,
-        total_results_size: 132,
-        total_pages: 2,
-        next_page: 'https://r.prismic.io/api/documents/search?ref=V80&page=2&pageSize=100',
-        prev_page: null,
-        results: [
-          'we have results 1',
-        ],
-      },
-    ];
-    const getJson = () => okPromise(() => responses[0]);
+  it.only('handles error in saving', (done) => {
+    const response = {
+      page: 1,
+      results_per_page: 100,
+      results_size: 100,
+      total_results_size: 132,
+      total_pages: 2,
+      next_page: null,
+      prev_page: null,
+      results: [
+        'we have results 1',
+      ],
+    };
+    const getJson = () => okPromise(() => response);
     const saveJson = () => failPromise(() => 'error saving');
     const funcs = { getJson, saveJson };
     backupPrismic(funcs)

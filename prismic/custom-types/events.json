@@ -89,6 +89,13 @@
     "location" : {
       "type" : "GeoPoint"
     },
+    "calendarUrl" : {
+      "type" : "Text",
+      "fieldset" : "URL of the calendar event",
+      "config" : {
+        "label" : "Calendar URL"
+      }
+    },
     "externalLinks" : {
       "type" : "Group",
       "fieldset" : "External links",

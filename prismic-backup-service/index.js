@@ -1,30 +1,22 @@
 const fetch = require('node-fetch');
 const leftPad = require('./left-pad');
+const { saveJson } = require('./s3');
 
 const prismicURL = 'https://rb-website-stage.prismic.io/api/documents/search?ref=V80_SyMAAKhGWsDT&page=1&pageSize=100';
 const timestamp = new Date().toISOString().substring(0, 10);
 
 function saveMetadata(metadata, funcs) {
-  console.log('metadata', metadata);
+  const name = `${timestamp}-prismic-backup/metadata.json`;
+  return funcs.saveJson(name, metadata);
+}
+
+function savePrismicData(json, funcs) {
+  const name = `${timestamp}-prismic-backup/page-${leftPad(json.page, 3)}.json`;
+  return funcs.saveJson(name, json);
 }
 
 function updateMetadata(metadata, json) {
   return metadata;
-}
-
-function makeName(json) {
-  return `prismic-data-${timestamp}-page-${leftPad(json.page, 3)}.json`;
-}
-
-function save(json, funcs) {
-  funcs.saveJson(makeName(json), json);
-  return new Promise(resolve => {
-    resolve(json);
-  });
-}
-
-function saveJson(name, data) {
-  console.log('saved', name);
 }
 
 function getJson(url) {
@@ -34,7 +26,7 @@ function getJson(url) {
 
 function loop(json, metadata, funcs) {
   console.log(json);
-  return save(json, funcs).then(() => {
+  return savePrismicData(json, funcs).then(() => {
     const newMetadata = updateMetadata(metadata, json);
 
     if (json.next_page) {

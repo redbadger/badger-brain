@@ -49,8 +49,8 @@ describe('backupPrismic', () => {
     backupPrismic(funcs)
       .then(() => {
         expect(saved.length).to.equal(2);
-        expect(saved[0].name).to.match(/prismic-data-....-..-..-page-001.json/);
-        expect(saved[1].name).to.match(/prismic-data-....-..-..-page-002.json/);
+        expect(saved[0].name).to.match(/....-..-..-prismic-backup\/page-001.json/);
+        expect(saved[1].name).to.match(/....-..-..-prismic-backup\/page-002.json/);
         expect(saved[0].data).to.deep.equal(responsesCopy[0]);
         expect(saved[1].data).to.deep.equal(responsesCopy[1]);
         // TODO: test for metadata saving

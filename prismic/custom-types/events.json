@@ -91,9 +91,9 @@
     },
     "calendarLink" : {
       "type" : "Text",
-      "fieldset" : "Link to public Google calendar event",
+      "fieldset" : "Link to calendar event",
       "config" : {
-        "label" : "Google Calendar link"
+        "label" : "Calendar link"
       }
     },
     "externalLinks" : {

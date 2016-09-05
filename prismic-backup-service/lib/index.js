@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 const leftPad = require('./left-pad');
-const { saveJson } = require('./s3');
+const saveJson = require('./s3').saveJson;
 
 const prismicURL = 'https://rb-website-stage.prismic.io/api/documents/search?ref=V80_SyMAAKhGWsDT&page=1&pageSize=100';
 const timestamp = new Date().toISOString().substring(0, 10);
@@ -15,8 +15,13 @@ function savePrismicData(json, funcs) {
   return funcs.saveJson(name, json);
 }
 
-function updateMetadata(metadata, json) {
-  return metadata;
+function updateMetadata(metadata, data) {
+  return {
+    totalDocuments: data.total_results_size,
+    seenDocuments: (metadata.seenDocuments || 0) + data.results.length,
+    totalPages: data.total_pages,
+    date: timestamp,
+  };
 }
 
 function getJson(url) {
@@ -53,5 +58,3 @@ module.exports = function backupPrismic(passedFuncs) {
     .then(saveMetadata)
     .catch(handleError);
 };
-
-// backupPrismic();

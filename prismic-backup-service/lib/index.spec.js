@@ -1,7 +1,7 @@
 const backupPrismic = require('./');
-
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
+const expect = require('chai').expect;
+const describe = require('mocha').describe;
+const it = require('mocha').it;
 
 function okPromise(fn) {
   return new Promise(resolve => resolve(fn()));

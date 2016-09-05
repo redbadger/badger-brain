@@ -89,6 +89,13 @@
     "location" : {
       "type" : "GeoPoint"
     },
+    "calendarLink" : {
+      "type" : "Text",
+      "fieldset" : "Link to public Google calendar event",
+      "config" : {
+        "label" : "Google Calendar link"
+      }
+    },
     "externalLinks" : {
       "type" : "Group",
       "fieldset" : "External links",

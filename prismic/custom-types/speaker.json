@@ -48,6 +48,14 @@
       "config" : {
         "label" : "Image URL"
       }
+    },
+    "description" : {
+      "type" : "StructuredText",
+      "fieldset" : "Description",
+      "config" : {
+        "placeholder" : "Full speaker description in markdown",
+        "multi" : "p"
+      }
     }
   }
 }

@@ -1,5 +1,17 @@
 # Change Log
 
+## [v0.9.0](https://github.com/redbadger/badger-brain/tree/v0.9.0) (2016-09-05)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.8.0...v0.9.0)
+
+**Merged pull requests:**
+
+- Changed calendarUrl to calendarURL everywhere to be consistent [\#76](https://github.com/redbadger/badger-brain/pull/76) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Added calendar link to event type [\#75](https://github.com/redbadger/badger-brain/pull/75) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Adding support for speaker bio field [\#74](https://github.com/redbadger/badger-brain/pull/74) ([asavin](https://github.com/asavin))
+- JobType is not a shared Type, added, jobURL to the type [\#73](https://github.com/redbadger/badger-brain/pull/73) ([zoeabryant](https://github.com/zoeabryant))
+- Fix: Correctly report EventPartner.level value [\#71](https://github.com/redbadger/badger-brain/pull/71) ([lpil](https://github.com/lpil))
+- Tickets [\#70](https://github.com/redbadger/badger-brain/pull/70) ([zoeabryant](https://github.com/zoeabryant))
+
 ## [v0.8.0](https://github.com/redbadger/badger-brain/tree/v0.8.0) (2016-08-18)
 [Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.7.0...v0.8.0)
 

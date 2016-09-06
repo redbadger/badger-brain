@@ -1,13 +1,13 @@
-function saveJson(name, data) {
+function saveJson(bucketName, key, data) {
   const AWS = require('aws-sdk'); // eslint-disable-line import/no-unresolved, global-require
 
   AWS.config.region = 'eu-west-1';
 
   // TODO: pass in bucket name
-  const s3bucket = new AWS.S3({ params: { Bucket: 'louis-static-site' } });
+  const s3bucket = new AWS.S3({ params: { Bucket: bucketName } });
 
   const index = {
-    Key: name,
+    Key: key,
     Body: JSON.stringify(data),
     ContentType: 'application/json',
   };

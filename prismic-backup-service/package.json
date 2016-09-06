@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "test-watch": "mocha --watch --reporter min"
+
   },
   "author": "",
   "license": "Apache-2.0",
@@ -15,5 +16,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
+  },
+  "config": {
+    "pre-git": {
+    }
   }
 }

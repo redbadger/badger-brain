@@ -1,5 +1,5 @@
 'use strict'; // eslint-disable-line strict
-// const backup = require('../lib');
+const backup = require('../lib');
 const variables = require('../config/variables.json');
 
 const environment = (cb, functionName) => {
@@ -15,12 +15,7 @@ const environment = (cb, functionName) => {
 
 module.exports.backupPrismic = (event, context, cb) => {
   const env = environment(cb, context.functionName);
-
-  cb(null, {
-    env,
-  });
-
-  // backup(env.bucketName, null)
-  //   .then(metadata => cb(null, metadata))
-  //   .catch(err => cb(err, null));
+  backup(env.bucketName)
+    .then(metadata => cb(null, metadata))
+    .catch(err => cb(err));
 };

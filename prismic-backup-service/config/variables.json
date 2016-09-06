@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "bucketName": "prismic-backup-dev"
+  },
+  "prod": {
+    "bucketName": "prismic-backup-prod"
+  }
+}

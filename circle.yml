@@ -10,12 +10,14 @@ dependencies:
   pre:
     - rm -rf node_modules
     - npm install
+    - cd prismic-backup-service && npm install
     - sudo pip install awsebcli --upgrade --ignore-installed six
 
 test:
   override:
     - npm run lint
     - npm run test-with-coverage
+    - cd prismic-backup-service && npm run test
   post:
     - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
 

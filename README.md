@@ -10,6 +10,7 @@ GraphQL server for all Red Badger related data.
 This project is public, so it's even more important that no sensitive data is
 committed to the repository.
 
+
 ## Usage
 
 ```sh

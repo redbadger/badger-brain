@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node",
     "build": "babel lib -d dist",
-    "lint": "eslint lib/",
+    "lint": "eslint lib/ prismic-backup-service/",
     "serve": "node dist/index.js",
     "test": "mocha",
     "test-watch": "mocha --watch --reporter min",
@@ -67,11 +67,7 @@
       "pre-commit": [
         "npm run lint",
         "npm t"
-      ],
-      "pre-push": [],
-      "post-commit": [],
-      "post-checkout": [],
-      "post-merge": []
+      ]
     }
   }
 }

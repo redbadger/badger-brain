@@ -42,10 +42,6 @@ function loop(json, metadata, funcs) {
   });
 }
 
-function handleError(err) {
-  console.error(err);
-}
-
 const defaultFuncs = {
   getJson,
   saveJson,
@@ -55,6 +51,5 @@ module.exports = function backupPrismic(passedFuncs) {
   const funcs = passedFuncs || defaultFuncs;
   return funcs.getJson(prismicURL)
     .then(json => loop(json, {}, funcs))
-    .then(saveMetadata)
-    .catch(handleError);
+    .then(saveMetadata);
 };

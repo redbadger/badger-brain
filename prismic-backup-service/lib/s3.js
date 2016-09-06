@@ -3,7 +3,6 @@ function saveJson(bucketName, key, data) {
 
   AWS.config.region = 'eu-west-1';
 
-  // TODO: pass in bucket name
   const s3bucket = new AWS.S3({ params: { Bucket: bucketName } });
 
   const index = {

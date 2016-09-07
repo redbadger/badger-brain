@@ -255,6 +255,20 @@
           }
         }
       }
+    },
+    "eventTicketOrVideoLink" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Event Button Link"
+      }
+    },
+    "eventStatus" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Event Status",
+        "options" : [ "PRE_RELEASE", "TICKETS_LIVE", "WAITLIST", "LIVE_STREAM", "EVENT_ENDED" ],
+        "placeholder" : ""
+      }
     }
   }
 }

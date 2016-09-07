@@ -36,6 +36,7 @@
     "graphql": "^0.6.0",
     "lodash": "^4.13.1",
     "newrelic": "^1.28.3",
+    "node-fetch": "^1.6.0",
     "prismic.io": "^3.0.0",
     "ramda": "^0.21.0"
   },

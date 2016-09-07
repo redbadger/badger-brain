@@ -1,7 +1,7 @@
 service: prismic-backup-service
 
 custom:
-  bucketName: prismic-backup-dev #${file(./config/variables.json)}
+  bucketName: ${file(./config/env.json):bucketName}
 
 provider:
   name: aws
@@ -30,7 +30,6 @@ functions:
 #     - schedule: rate(10 minutes)
 #     - sns: greeter-topic
 
-# you can add CloudFormation resource templates here
 resources:
   Resources:
     BackupBucket:
@@ -41,11 +40,7 @@ resources:
     ErrorSNSTopic:
       Type: AWS::SNS::Topic
       Properties:
-        Subscription:
-          - Endpoint: "zoe.bryant@red-badger.com"
-            Protocol: email
-          - Endpoint: "louis.pilfold@red-badger.com"
-            Protocol: email
+        Subscription: ${file(./config/env.json):ErrorSNSSubscriptions}
 
     LambdaErrorAlarm:
       Type: AWS::CloudWatch::Alarm

@@ -1,4 +1,4 @@
-service: prismic-backup-service # NOTE: update this with your service name
+service: prismic-backup-service
 
 custom:
   bucketName: prismic-backup-dev #${file(./config/variables.json)}
@@ -18,7 +18,7 @@ provider:
         - "arn:aws:s3:::${self:custom.bucketName}/*"
 
 functions:
-  backupPrismic:
+  BackupPrismic:
     handler: bin/handler.backupPrismic
 
 #   you can add any of the following events
@@ -37,3 +37,34 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:custom.bucketName}
+
+    ErrorSNSTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        Subscription:
+          - Endpoint: "zoe.bryant@red-badger.com"
+            Protocol: email
+          - Endpoint: "louis.pilfold@red-badger.com"
+            Protocol: email
+
+    LambdaErrorAlarm:
+      Type: AWS::CloudWatch::Alarm
+      Properties:
+        AlarmActions:
+          - Ref: "ErrorSNSTopic"
+        AlarmDescription: "An error has been thrown by the lambda function responsible for backing up prismic data to S3."
+        AlarmName: PrismicBackupLambdaErrorAlarm
+          # TODO: see if we get a conflict AlarmName if we deploy two different versions.
+          # ie. dev/prod versions
+        ComparisonOperator: GreaterThanOrEqualToThreshold
+        Dimensions:
+          - Name: FunctionName
+            Value:
+              Ref: BackupPrismicLambdaFunction
+        EvaluationPeriods: 1
+        MetricName: Errors
+        Namespace: AWS/Lambda
+        Period: 60
+        Statistic: Sum
+        Threshold: 1
+        Unit: Count

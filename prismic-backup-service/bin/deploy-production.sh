@@ -29,5 +29,10 @@ echo Deploying prismic-backup-service to prod
 cd "$SERVICE_DIR"
 sls deploy --stage prod
 
+echo Creating new lambda version
+aws lambda publish-version \
+  --function-name prismic-backup-service-prod-BackupPrismic \
+  --region eu-west-1
+
 echo Cleanup
 rm "$ENV_FILE"

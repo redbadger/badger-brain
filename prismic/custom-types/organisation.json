@@ -9,9 +9,9 @@
     },
     "name" : {
       "type" : "Text",
-      "fieldset" : "Partner Info",
+      "fieldset" : "Organisation Info",
       "config" : {
-        "label" : "Partner Name"
+        "label" : "Organisation Name"
       }
     },
     "description" : {
@@ -20,10 +20,10 @@
         "label" : "Description (Max 50 Characters)"
       }
     },
-    "partnerURL" : {
+    "URL" : {
       "type" : "Text",
       "config" : {
-        "label" : "Partner URL"
+        "label" : "Organisation URL"
       }
     },
     "imageURL" : {
@@ -34,7 +34,7 @@
     },
     "jobs" : {
       "type" : "Group",
-      "fieldset" : "Partner Jobs",
+      "fieldset" : "Organisation Jobs",
       "config" : {
         "fields" : {
           "title" : {

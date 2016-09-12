@@ -53,7 +53,7 @@ Your responsibility as a developer is to maintain Prismic schema definitions her
 
 ## Visualising schema
 
-<a href="graphql-erd.png"><img src="assets/infrastructure-chart.png"></a>
+<a href="assets/graphql-erd.png"><img src="assets/graphql-erd.png"></a>
 
 You can generate a diagram of Badger Brain GraphQL schema by following these easy steps:
 

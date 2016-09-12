@@ -37,28 +37,12 @@
       "fieldset" : "Organisation Jobs",
       "config" : {
         "fields" : {
-          "title" : {
-            "type" : "Text",
+          "data" : {
+            "type" : "Link",
             "config" : {
-              "label" : "Job Title"
-            }
-          },
-          "location" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job location"
-            }
-          },
-          "description" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job description"
-            }
-          },
-          "jobURL" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job URL"
+              "select" : "document",
+              "customtypes" : [ "job" ],
+              "placeholder" : "Link to a Job"
             }
           }
         }

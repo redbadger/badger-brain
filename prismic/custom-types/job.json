@@ -1,0 +1,38 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Leave blank to auto generate"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Job Position Title",
+        "placeholder": "Frontend Engineer"
+      }
+    },
+    "location" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Location",
+        "placeholder": "London, UK"
+      }
+    },
+    "description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Short description"
+      }
+    },
+    "jobURL" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "URL to more info",
+        "placeholder": "https://www.example.com/job/"
+      }
+    }
+  }
+}

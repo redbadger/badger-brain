@@ -51,6 +51,18 @@ Prismic.io at the moment our main data provider. Because Prismic itself doesn't 
 
 Your responsibility as a developer is to maintain Prismic schema definitions here for versioning purposes.
 
+## Visualising schema
+
+<a href="graphql-erd.png"><img src="assets/infrastructure-chart.png"></a>
+
+You can generate a diagram of Badger Brain GraphQL schema by following these easy steps:
+
+* `brew install graphviz`
+* `npm install -g graphqlviz`
+* Run Badger Brain with `npm start`
+* Open another console tab and run `graphqlviz http://localhost:3001/graphql -a | dot -Tpng -o graph.png`
+* Congratulations, you have generated most up to date version of the schema diagram
+
 ## Data flow
 
 Badger Brain offers read-only API, which means there is no way of posting data back to Badger Brain. It doesn't contain any mutations.

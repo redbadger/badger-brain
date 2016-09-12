@@ -241,7 +241,7 @@
             "type" : "Link",
             "config" : {
               "select" : "document",
-              "customtypes" : [ "partner" ],
+              "customtypes" : [ "organisation" ],
               "placeholder" : "Link to a partner"
             }
           },

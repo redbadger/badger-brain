@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const leftPad = require('./left-pad');
 const saveJson = require('./s3').saveJson;
 
-const prismicURL = 'https://rb-website-stage.prismic.io/api/documents/search?ref=V80_SyMAAKhGWsDT&page=1&pageSize=100';
+const prismicApiURL = 'https://rb-website-stage.prismic.io/api';
 const timestamp = new Date().toISOString().substring(0, 10);
 
 function saveMetadata(bucketName, metadata, funcs) {
@@ -29,6 +29,17 @@ function getJson(url) {
     .then(res => res.json());
 }
 
+function getDocumentReference(funcs) {
+  return funcs.getJson(prismicApiURL)
+    .then((res) => {
+      const masterRef = res.refs.find((ref) => ref.isMasterRef).ref;
+      if (!masterRef) {
+        throw Error('Failed to get the master ref');
+      }
+      return masterRef;
+    });
+}
+
 function loop(bucketName, json, metadata, funcs) {
   return savePrismicData(bucketName, json, funcs).then(() => {
     const newMetadata = updateMetadata(metadata, json);
@@ -48,7 +59,9 @@ const defaultFuncs = {
 
 module.exports = function backupPrismic(bucketName, passedFuncs) {
   const funcs = passedFuncs || defaultFuncs;
-  return funcs.getJson(prismicURL)
+  return getDocumentReference(funcs)
+    .then(ref => `${prismicApiURL}/documents/search?ref=${ref}&page=1&pageSize=100`)
+    .then(prismicURL => funcs.getJson(prismicURL))
     .then(json => loop(bucketName, json, {}, funcs))
     .then(metadata => saveMetadata(bucketName, metadata, funcs));
 };

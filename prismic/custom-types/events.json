@@ -256,7 +256,7 @@
         }
       }
     },
-    "eventTicketOrVideoLink" : {
+    "buttonLink" : {
       "type" : "Text",
       "config" : {
         "label" : "Event Button Link"

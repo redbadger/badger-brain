@@ -262,7 +262,7 @@
         "label" : "Event Button Link"
       }
     },
-    "eventStatus" : {
+    "status" : {
       "type" : "Select",
       "config" : {
         "label" : "Event Status",

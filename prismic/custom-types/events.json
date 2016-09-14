@@ -256,10 +256,16 @@
         }
       }
     },
-    "buttonLink" : {
+    "ticketLink" : {
       "type" : "Text",
       "config" : {
-        "label" : "Event Button Link"
+        "label" : "Event Ticket Link"
+      }
+    },
+    "streamingLink" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Event Streaming Link"
       }
     },
     "status" : {

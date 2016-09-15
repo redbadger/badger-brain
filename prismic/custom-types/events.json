@@ -61,24 +61,6 @@
         "label" : "Ticket release date"
       }
     },
-    "ticketsAvailable" : {
-      "type" : "Select",
-      "fieldset" : "A boolean showing whether the tickets are availiable",
-      "config" : {
-        "label" : "Tickets Available",
-        "options" : [ "true" ],
-        "placeholder" : "false"
-      }
-    },
-    "waitingListOpen" : {
-      "type" : "Select",
-      "fieldset" : "A boolean showing whether the waiting list is open",
-      "config" : {
-        "label" : "Waiting List Open",
-        "options" : [ "true" ],
-        "placeholder" : "false"
-      }
-    },
     "address" : {
       "type" : "Text",
       "fieldset" : "Event location",

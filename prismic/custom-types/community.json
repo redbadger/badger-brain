@@ -35,15 +35,6 @@
         "label" : "Mailing List Summary"
       }
     },
-    "featuredEvent" : {
-      "type" : "Link",
-      "fieldset" : "Featured Event",
-      "config" : {
-        "select" : "document",
-        "customtypes" : [ "event" ],
-        "placeholder" : "Link to a event"
-      }
-    },
     "events" : {
       "type" : "Group",
       "fieldset" : "Community Events",

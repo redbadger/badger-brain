@@ -1,5 +1,20 @@
 # Change Log
 
+## [v1.0.0](https://github.com/redbadger/badger-brain/tree/v1.0.0) (2016-09-15)
+[Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.9.0...v1.0.0)
+
+**Implemented enhancements:**
+
+- Add coverage tool to help find code without test coverage [\#58](https://github.com/redbadger/badger-brain/issues/58)
+
+**Merged pull requests:**
+
+- Prismic backup service now has a dynamic document reference [\#81](https://github.com/redbadger/badger-brain/pull/81) ([zoeabryant](https://github.com/zoeabryant))
+- Rename Partner to Organisation [\#80](https://github.com/redbadger/badger-brain/pull/80) ([lpil](https://github.com/lpil))
+- Added bb support for new ticket release process [\#79](https://github.com/redbadger/badger-brain/pull/79) ([AndrewBestbier](https://github.com/AndrewBestbier))
+- Production deploy script for prismic backup service [\#78](https://github.com/redbadger/badger-brain/pull/78) ([zoeabryant](https://github.com/zoeabryant))
+- Backup Prismic [\#77](https://github.com/redbadger/badger-brain/pull/77) ([zoeabryant](https://github.com/zoeabryant))
+
 ## [v0.9.0](https://github.com/redbadger/badger-brain/tree/v0.9.0) (2016-09-05)
 [Full Changelog](https://github.com/redbadger/badger-brain/compare/v0.8.0...v0.9.0)
 

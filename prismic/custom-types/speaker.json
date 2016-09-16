@@ -1,60 +1,59 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "fieldset" : "UID",
-      "config" : {
-        "placeholder" : "Leave blank to auto generate"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "fieldset": "UID",
+      "config": {
+        "placeholder": "Please leave this blank"
       }
     },
-    "name" : {
-      "type" : "Text",
-      "fieldset" : "Name",
-      "config" : {
-        "label" : "Name"
+    "name": {
+      "type": "Text",
+      "fieldset": "Name",
+      "config": {
+        "label": "Full Name"
       }
     },
-    "company" : {
-      "type" : "Text",
-      "fieldset" : "Company",
-      "config" : {
-        "label" : "Company"
+    "imageURL": {
+      "type": "Text",
+      "fieldset": "Profile Image",
+      "config": {
+        "label": "Image URL"
       }
     },
-    "twitterHandle" : {
-      "type" : "Text",
-      "fieldset" : "Twitter Handle",
-      "config" : {
-        "label" : "Twitter Handle"
+    "company": {
+      "type": "Text",
+      "fieldset": "Company",
+      "config": {
+        "label": "Company Name"
       }
     },
-    "githubHandle" : {
-      "type" : "Text",
-      "fieldset" : "Github Handle",
-      "config" : {
-        "placeholder" : "Github Handle"
+    "twitterHandle": {
+      "type": "Text",
+      "fieldset": "Social",
+      "config": {
+        "label": "Twitter Handle"
       }
     },
-    "blogURL" : {
-      "type" : "Text",
-      "fieldset" : "Blog URL",
-      "config" : {
-        "label" : "Blog URL"
+    "githubHandle": {
+      "type": "Text",
+      "config": {
+        "label": "Github Handle"
       }
     },
-    "imageURL" : {
-      "type" : "Text",
-      "fieldset" : "Image URL",
-      "config" : {
-        "label" : "Image URL"
+    "blogURL": {
+      "type": "Text",
+      "fieldset": "Blog",
+      "config": {
+        "label": "Blog URL"
       }
     },
-    "description" : {
-      "type" : "StructuredText",
-      "fieldset" : "Description",
-      "config" : {
-        "placeholder" : "Full speaker description in markdown",
-        "multi" : "p"
+    "bio": {
+      "type": "StructuredText",
+      "fieldset": "Description",
+      "config": {
+        "placeholder": "Full speaker description",
+        "multi": "p"
       }
     }
   }

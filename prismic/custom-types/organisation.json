@@ -1,64 +1,64 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "fieldset" : "UID",
-      "config" : {
-        "placeholder" : "Leave blank to auto generate"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "fieldset": "UID",
+      "config": {
+        "placeholder": "Please leave this blank"
       }
     },
-    "name" : {
-      "type" : "Text",
-      "fieldset" : "Organisation Info",
-      "config" : {
-        "label" : "Organisation Name"
+    "name": {
+      "type": "Text",
+      "fieldset": "Organisation Info",
+      "config": {
+        "label": "Name"
       }
     },
-    "description" : {
-      "type" : "Text",
-      "config" : {
-        "label" : "Description (Max 50 Characters)"
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "Description (Max 50 Characters)"
       }
     },
-    "URL" : {
-      "type" : "Text",
-      "config" : {
-        "label" : "Organisation URL"
+    "URL": {
+      "type": "Text",
+      "config": {
+        "label": "Organisation URL"
       }
     },
-    "imageURL" : {
-      "type" : "Text",
-      "config" : {
-        "label" : "Image URL"
+    "imageURL": {
+      "type": "Text",
+      "config": {
+        "label": "Image URL"
       }
     },
-    "jobs" : {
-      "type" : "Group",
-      "fieldset" : "Organisation Jobs",
-      "config" : {
-        "fields" : {
-          "title" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job Title"
+    "jobs": {
+      "type": "Group",
+      "fieldset": "Organisation Jobs",
+      "config": {
+        "fields": {
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Job Title"
             }
           },
-          "location" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job location"
+          "location": {
+            "type": "Text",
+            "config": {
+              "label": "Job location"
             }
           },
-          "description" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job description"
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Job description"
             }
           },
-          "jobURL" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Job URL"
+          "jobURL": {
+            "type": "Text",
+            "config": {
+              "label": "Job URL"
             }
           }
         }

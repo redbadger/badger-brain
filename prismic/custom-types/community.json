@@ -1,62 +1,57 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "fieldset" : "UID",
-      "config" : {
-        "placeholder" : "Leave blank to auto generate"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "fieldset": "UID",
+      "config": {
+        "placeholder": "Please leave this field blank"
       }
     },
-    "title" : {
-      "type" : "Text",
-      "fieldset" : "Community Title",
-      "config" : {
-        "label" : "Community Title"
+    "title": {
+      "type": "Text",
+      "fieldset": "Community Details",
+      "config": {
+        "label": "Title"
       }
     },
-    "summary" : {
-      "type" : "Text",
-      "fieldset" : "Community Summary",
-      "config" : {
-        "label" : "Community Summary"
+    "summary": {
+      "type": "Text",
+      "config": {
+        "label": "Summary"
       }
     },
-    "mailingListTitle" : {
-      "type" : "Text",
-      "fieldset" : "Mailing List Title",
-      "config" : {
-        "label" : "Mailing List Title"
+    "mailingListTitle": {
+      "type": "Text",
+      "fieldset": "Mailing list details",
+      "config": {
+        "label": "Title"
       }
     },
-    "mailingListSummary" : {
-      "type" : "Text",
-      "fieldset" : "Mailing List Summary",
-      "config" : {
-        "label" : "Mailing List Summary"
+    "mailingListSummary": {
+      "type": "Text",
+      "config": {
+        "label": "Summary"
       }
     },
-    "events" : {
-      "type" : "Group",
-      "fieldset" : "Community Events",
-      "config" : {
-        "fields" : {
-          "data" : {
-            "type" : "Link",
-            "config" : {
-              "select" : "document",
-              "customtypes" : [ "event" ],
-              "placeholder" : "Link to an event"
+    "events": {
+      "type": "Group",
+      "fieldset": "Events",
+      "config": {
+        "fields": {
+          "data": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["event"],
+              "placeholder": "Link to an event"
             }
           },
           "displayLevel": {
-            "type" : "Select",
-            "config" : {
-              "label" : "Display Level",
-              "options" : [
-                "Featured",
-                "Highlighted"
-              ],
-              "placeholder" : "Regular"
+            "type": "Select",
+            "config": {
+              "label": "Display Level",
+              "options": ["Featured", "Highlighted"],
+              "placeholder": "Regular"
             }
           }
         }

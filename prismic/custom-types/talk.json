@@ -1,37 +1,37 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "fieldset" : "UID",
-      "config" : {
-        "placeholder" : "Leave blank to auto generate"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "fieldset": "UID",
+      "config": {
+        "placeholder": "Please leave this field blank"
       }
     },
-    "title" : {
-      "type" : "Text",
-      "fieldset" : "Talk Title",
-      "config" : {
-        "label" : "Talk Title "
+    "title": {
+      "type": "Text",
+      "fieldset": "Talk Title",
+      "config": {
+        "label": "Title "
       }
     },
-    "summary" : {
-      "type" : "Text",
-      "fieldset" : "Talk Summary",
-      "config" : {
-        "label" : "Talk Summary"
+    "summary": {
+      "type": "Text",
+      "fieldset": "Talk Summary",
+      "config": {
+        "label": "Summary"
       }
     },
-    "speakers" : {
-      "type" : "Group",
-      "fieldset" : "Speakers",
-      "config" : {
-        "fields" : {
-          "data" : {
-            "type" : "Link",
-            "config" : {
-              "select" : "document",
-              "customtypes" : [ "speaker" ],
-              "placeholder" : "Link to the talk speakers"
+    "speakers": {
+      "type": "Group",
+      "fieldset": "Speakers",
+      "config": {
+        "fields": {
+          "data": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["speaker"],
+              "placeholder": "Link to speaker"
             }
           }
         }

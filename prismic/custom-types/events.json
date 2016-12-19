@@ -1,261 +1,265 @@
 {
-  "Main": {
-    "uid": {
-      "type": "UID",
-      "fieldset": "UID",
-      "config": {
-        "placeholder": "Please leave this field blank"
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "fieldset" : "UID",
+      "config" : {
+        "placeholder" : "Please leave this field blank"
       }
     },
-    "title": {
-      "type": "Text",
-      "fieldset": "Event Details (Details from these fields will be visible on both React website and Red Badger website)",
-      "config": {
-        "label": "Title"
+    "title" : {
+      "type" : "Text",
+      "fieldset" : "Event Details (Details from these fields will be visible on both React website and Red Badger website)",
+      "config" : {
+        "label" : "Title"
       }
     },
-    "strapline": {
-      "type": "Text",
-      "config": {
-        "label": "Strapline"
+    "strapline" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Strapline"
       }
     },
-    "event-image": {
-      "type": "Text",
-      "config": {
-        "label": "Feature Image"
+    "featuredEventDescription" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Featured event description"
       }
     },
-    "eventType": {
-      "type": "Select",
-      "config": {
-        "label": "Event Type",
-        "options": ["Meetup", "Conference"],
-        "placeholder": "Other"
+    "event-image" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Feature Image"
       }
     },
-    "ticketLink": {
-      "type": "Text",
-      "fieldset": "Event Status Manipulation fields",
-      "config": {
-        "label": "Event Ticket Link"
+    "eventType" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Event Type",
+        "options" : [ "Meetup", "Conference" ],
+        "placeholder" : "Other"
       }
     },
-    "streamingLink": {
-      "type": "Text",
-      "config": {
-        "label": "Event Streaming Link"
+    "ticketLink" : {
+      "type" : "Text",
+      "fieldset" : "Event Status Manipulation fields",
+      "config" : {
+        "label" : "Event Ticket Link"
       }
     },
-    "status": {
-      "type": "Select",
-      "config": {
-        "label": "Event Status",
-        "options": ["PRE_RELEASE", "TICKETS_LIVE", "WAITLIST", "LIVE_STREAM",
-          "EVENT_ENDED"
-        ],
-        "placeholder": ""
+    "streamingLink" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Event Streaming Link"
       }
     },
-    "body": {
-      "type": "StructuredText",
-      "fieldset": "Body",
-      "config": {
-        "placeholder": "Full event description",
-        "multi": "p,strong,em,hyperlink"
+    "status" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Event Status",
+        "options" : [ "PRE_RELEASE", "TICKETS_LIVE", "WAITLIST", "LIVE_STREAM", "EVENT_ENDED" ],
+        "placeholder" : ""
       }
     },
-    "timestamp": {
-      "type": "Timestamp",
-      "fieldset": "Dates and times",
-      "config": {
-        "label": "Start date and time"
+    "body" : {
+      "type" : "StructuredText",
+      "fieldset" : "Body",
+      "config" : {
+        "placeholder" : "Full event description",
+        "multi" : "p,strong,em,hyperlink"
       }
     },
-    "timestampEnd": {
-      "type": "Timestamp",
-      "config": {
-        "label": "End date and time"
+    "timestamp" : {
+      "type" : "Timestamp",
+      "fieldset" : "Dates and times",
+      "config" : {
+        "label" : "Start date and time"
       }
     },
-    "ticketReleaseDate": {
-      "type": "Timestamp",
-      "config": {
-        "label": "Ticket release date"
+    "timestampEnd" : {
+      "type" : "Timestamp",
+      "config" : {
+        "label" : "End date and time"
       }
     },
-    "calendarURL": {
-      "type": "Text",
-      "fieldset": "URL of the calendar event",
-      "config": {
-        "label": "URL"
+    "ticketReleaseDate" : {
+      "type" : "Timestamp",
+      "config" : {
+        "label" : "Ticket release date"
       }
     },
-    "address": {
-      "type": "Text",
-      "fieldset": "Event location",
-      "config": {
-        "label": "Event address"
+    "calendarURL" : {
+      "type" : "Text",
+      "fieldset" : "URL of the calendar event",
+      "config" : {
+        "label" : "URL"
       }
     },
-    "location": {
-      "type": "GeoPoint"
+    "address" : {
+      "type" : "Text",
+      "fieldset" : "Event location",
+      "config" : {
+        "label" : "Event address"
+      }
     },
-    "tickets": {
-      "type": "Group",
-      "fieldset": "Event Tickets",
-      "config": {
-        "fields": {
-          "data": {
-            "type": "Link",
-            "config": {
-              "select": "document",
-              "customtypes": ["ticket"],
-              "placeholder": "Link to ticket types"
+    "location" : {
+      "type" : "GeoPoint"
+    },
+    "tickets" : {
+      "type" : "Group",
+      "fieldset" : "Event Tickets",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "ticket" ],
+              "placeholder" : "Link to ticket types"
             }
           }
         }
       }
     },
-    "talks": {
-      "type": "Group",
-      "fieldset": "Event Talks",
-      "config": {
-        "fields": {
-          "data": {
-            "type": "Link",
-            "config": {
-              "select": "document",
-              "customtypes": ["talk"],
-              "placeholder": "Link to a talk"
+    "talks" : {
+      "type" : "Group",
+      "fieldset" : "Event Talks",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "talk" ],
+              "placeholder" : "Link to a talk"
             }
           }
         }
       }
     },
-    "schedule": {
-      "type": "Group",
-      "fieldset": "Event Schedule",
-      "config": {
-        "fields": {
-          "datetime": {
-            "type": "Timestamp",
-            "config": {
-              "placeholder": "Timestamp"
+    "schedule" : {
+      "type" : "Group",
+      "fieldset" : "Event Schedule",
+      "config" : {
+        "fields" : {
+          "datetime" : {
+            "type" : "Timestamp",
+            "config" : {
+              "placeholder" : "Timestamp"
             }
           },
-          "text": {
-            "type": "Text",
-            "config": {
-              "placeholder": "The schedule item text"
+          "text" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "The schedule item text"
             }
           }
         }
       }
     },
-    "sponsors": {
-      "type": "Group",
-      "fieldset": "Event Sponsors",
-      "config": {
-        "fields": {
-          "websiteURL": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Website URL"
+    "sponsors" : {
+      "type" : "Group",
+      "fieldset" : "Event Sponsors",
+      "config" : {
+        "fields" : {
+          "websiteURL" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Website URL"
             }
           },
-          "imageURL": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Image URL"
+          "imageURL" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Image URL"
             }
           },
-          "name": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Name of the sponsor"
+          "name" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Name of the sponsor"
             }
           }
         }
       }
     },
-    "partners": {
-      "type": "Group",
-      "fieldset": "Event Partners",
-      "config": {
-        "fields": {
-          "data": {
-            "type": "Link",
-            "config": {
-              "select": "document",
-              "customtypes": ["organisation"],
-              "placeholder": "Link to a partner"
+    "partners" : {
+      "type" : "Group",
+      "fieldset" : "Event Partners",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "organisation" ],
+              "placeholder" : "Link to a partner"
             }
           },
-          "level": {
-            "type": "Select",
-            "config": {
-              "label": "Partner Level",
-              "options": ["Bronze", "Silver", "Gold"],
-              "placeholder": "Supporter"
+          "level" : {
+            "type" : "Select",
+            "config" : {
+              "label" : "Partner Level",
+              "options" : [ "Bronze", "Silver", "Gold" ],
+              "placeholder" : "Supporter"
             }
           }
         }
       }
     },
-    "externalLinks": {
-      "type": "Group",
-      "fieldset": "External links",
-      "config": {
-        "fields": {
-          "label": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Link label"
+    "externalLinks" : {
+      "type" : "Group",
+      "fieldset" : "External links",
+      "config" : {
+        "fields" : {
+          "label" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link label"
             }
           },
-          "link": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Link URL"
+          "link" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link URL"
             }
           },
-          "type": {
-            "type": "Select",
-            "fieldset": "A type of link",
-            "config": {
-              "label": "Link Type",
-              "options": ["STREAM", "TICKET"],
-              "placeholder": "OTHER"
+          "type" : {
+            "type" : "Select",
+            "fieldset" : "A type of link",
+            "config" : {
+              "label" : "Link Type",
+              "options" : [ "STREAM", "TICKET" ],
+              "placeholder" : "OTHER"
             }
           }
         }
       }
     },
-    "internalLinks": {
-      "type": "Group",
-      "fieldset": "Internal links",
-      "config": {
-        "fields": {
-          "label": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Link label"
+    "internalLinks" : {
+      "type" : "Group",
+      "fieldset" : "Internal links",
+      "config" : {
+        "fields" : {
+          "label" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link label"
             }
           },
-          "link": {
-            "type": "Text",
-            "config": {
-              "placeholder": "Link URL"
+          "link" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link URL"
             }
           },
-          "type": {
-            "type": "Select",
-            "fieldset": "A type of link",
-            "config": {
-              "label": "Link Type",
-              "options": ["STREAM", "TICKET"],
-              "placeholder": "OTHER"
+          "type" : {
+            "type" : "Select",
+            "fieldset" : "A type of link",
+            "config" : {
+              "label" : "Link Type",
+              "options" : [ "STREAM", "TICKET" ],
+              "placeholder" : "OTHER"
             }
           }
         }

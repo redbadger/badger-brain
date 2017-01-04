@@ -1,0 +1,38 @@
+{
+  "data": {
+    "allBadgers": [
+      {
+        "id": "WFz97iYAAJAYbwDh",
+        "firstName": "Alex",
+        "lastName": "Savin",
+        "jobTitle": "Software Engineer",
+        "imageUrl": "https://placekitten.com/335/335",
+        "startDate": "01/01/2014",
+        "about": "Hello I'm Alex",
+        "skills": "Photography",
+        "influence": "Many",
+        "achievements": "Plenty of cool stuff",
+        "linkedin": "http://linkedin.com",
+        "github": "http://github.com",
+        "twitter": "http://twitter.com",
+        "categories": ["Engineering","Leadership"]
+      },
+      {
+        "id": "WFqQoiYAAP47x1rr",
+        "firstName": "Etiene",
+        "lastName": "Dalcol",
+        "jobTitle": "",
+        "imageUrl": "https://placekitten.com/335/335",
+        "startDate": "05/12/2016",
+        "about": "Here goes a description",
+        "skills": "Lua",
+        "influence": "1984",
+        "achievements": "Just got here",
+        "linkedin": "http://linkedin.com",
+        "github": "http://github.com",
+        "twitter": "http://twitter.com",
+        "categories": ["Engineering","Strategy"]
+      }
+    ]
+  }
+}

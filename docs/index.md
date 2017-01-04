@@ -27,8 +27,9 @@ Badger Brain is a public GraphQL interface providing data about Red Badger compa
 * Communities
 * Event talks
 * Event speakers
+* Badgers
 
-Purpose of the Badger Brain is to serve all public (and potentially private) information about the company to whoever might be interested to consume it. If we ever decide to include private information in the schema, that will require some sort of authentication mechanism.
+The purpose of the Badger Brain is to serve all public (and potentially private) information about the company to whoever might be interested to consume it. If we ever decide to include private information in the schema, that will require some sort of authentication mechanism.
 
 ## Infrastructure
 
@@ -54,8 +55,3 @@ Your responsibility as a developer is to maintain Prismic schema definitions her
 ## Data flow
 
 Badger Brain offers read-only API, which means there is no way of posting data back to Badger Brain. It doesn't contain any mutations.
-
-
-
-
-

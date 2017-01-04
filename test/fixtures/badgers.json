@@ -15,7 +15,10 @@
         "linkedin": "http://linkedin.com",
         "github": "http://github.com",
         "twitter": "http://twitter.com",
-        "categories": ["Engineering","Leadership"]
+        "categories": [
+          { "name": "Engineering", "slug": "engineering" },
+          { "name": "Leadership", "slug": "leadership" }
+        ]
       },
       {
         "id": "WFqQoiYAAP47x1rr",
@@ -31,7 +34,10 @@
         "linkedin": "http://linkedin.com",
         "github": "http://github.com",
         "twitter": "http://twitter.com",
-        "categories": ["Engineering","Strategy"]
+        "categories": [
+          { "name": "Engineering", "slug": "engineering" },
+          { "name": "Leadership", "slug": "leadership" }
+        ]
       }
     ]
   }

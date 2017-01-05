@@ -1,0 +1,82 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "UID"
+      }
+    },
+    "first-name" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "First Name"
+      }
+    },
+    "last-name" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Last Name"
+      }
+    },
+    "job-title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Job Title"
+      }
+    },
+    "image-url" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Image URL"
+      }
+    },
+    "start-date" : {
+      "config" : {
+        "label" : "Date Joined Red Badger"
+      },
+      "type" : "Date"
+    },
+    "about" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "About"
+      }
+    },
+    "skills" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Signature Skills"
+      }
+    },
+    "influence" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Life Changing Experience"
+      }
+    },
+    "achievements" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Red Badger Achievements"
+      }
+    },
+    "linkedin" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "LinkedIn"
+      }
+    },
+    "twitter" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Twitter"
+      }
+    },
+    "github" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Github"
+      }
+    }
+  }
+}

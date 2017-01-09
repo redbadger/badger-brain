@@ -3,6 +3,7 @@
     "allBadgers": [
       {
         "id": "WFz97iYAAJAYbwDh",
+        "slug": "alex-savin",
         "firstName": "Alex",
         "lastName": "Savin",
         "jobTitle": "Software Engineer",
@@ -25,6 +26,7 @@
       },
       {
         "id": "WFqQoiYAAP47x1rr",
+        "slug": "etiene-dalcol",
         "firstName": "Etiene",
         "lastName": "Dalcol",
         "jobTitle": "",

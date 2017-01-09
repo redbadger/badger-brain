@@ -4,8 +4,7 @@
       {
         "id": "WFz97iYAAJAYbwDh",
         "slug": "alex-savin",
-        "firstName": "Alex",
-        "lastName": "Savin",
+        "name": "Alex Savin",
         "order": 1,
         "jobTitle": "Software Engineer",
         "imageUrl": "https://placekitten.com/335/335",
@@ -28,8 +27,7 @@
       {
         "id": "WFqQoiYAAP47x1rr",
         "slug": "etiene-dalcol",
-        "firstName": "Etiene",
-        "lastName": "Dalcol",
+        "name": "Etiene Dalcol",
         "order": null,
         "jobTitle": "",
         "imageUrl": "https://placekitten.com/335/335",

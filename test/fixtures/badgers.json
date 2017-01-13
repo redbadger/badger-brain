@@ -4,7 +4,8 @@
       {
         "id": "WFz97iYAAJAYbwDh",
         "slug": "alex-savin",
-        "name": "Alex Savin",
+        "firstName": "Alex",
+        "lastName": "Savin",
         "jobTitle": "Software Engineer",
         "imageUrl": "https://placekitten.com/335/335",
         "startDate": "01/01/2014",
@@ -26,7 +27,8 @@
       {
         "id": "WFqQoiYAAP47x1rr",
         "slug": "etiene-dalcol",
-        "name": "Etiene Dalcol",
+        "firstName": "Etiene",
+        "lastName": "Dalcol",
         "jobTitle": "",
         "imageUrl": "https://placekitten.com/335/335",
         "startDate": "05/12/2016",

@@ -1,21 +1,21 @@
 {
   "Main" : {
     "uid" : {
-      "type" : "UID",
       "config" : {
         "label" : "UID"
-      }
+      },
+      "type" : "UID"
     },
-    "first-name" : {
-      "type" : "Text",
+    "name" : {
       "config" : {
-        "label" : "First Name"
-      }
+        "label" : "Name"
+      },
+      "type" : "Text"
     },
-    "last-name" : {
-      "type" : "Text",
+    "order" : {
+      "type" : "Number",
       "config" : {
-        "label" : "Last Name"
+        "label" : "Order"
       }
     },
     "job-title" : {
@@ -43,9 +43,17 @@
       }
     },
     "skills" : {
-      "type" : "Text",
+      "type" : "Group",
       "config" : {
-        "label" : "Signature Skills"
+        "fields" : {
+          "skill" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Skill"
+            }
+          }
+        },
+        "label" : "Skills"
       }
     },
     "influence" : {

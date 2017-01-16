@@ -3,13 +3,17 @@
     "allBadgers": [
       {
         "id": "WFz97iYAAJAYbwDh",
+        "slug": "alex-savin",
         "firstName": "Alex",
         "lastName": "Savin",
         "jobTitle": "Software Engineer",
         "imageUrl": "https://placekitten.com/335/335",
         "startDate": "01/01/2014",
         "about": "Hello I'm Alex",
-        "skills": "Photography",
+        "skills": [
+          "Programming",
+          "JavaScript"
+        ],
         "influence": "Many",
         "achievements": "Plenty of cool stuff",
         "linkedin": "http://linkedin.com",
@@ -22,13 +26,16 @@
       },
       {
         "id": "WFqQoiYAAP47x1rr",
+        "slug": "etiene-dalcol",
         "firstName": "Etiene",
         "lastName": "Dalcol",
         "jobTitle": "",
         "imageUrl": "https://placekitten.com/335/335",
         "startDate": "05/12/2016",
         "about": "Here goes a description",
-        "skills": "Lua",
+        "skills": [
+          "Lua"
+        ],
         "influence": "1984",
         "achievements": "Just got here",
         "linkedin": "http://linkedin.com",

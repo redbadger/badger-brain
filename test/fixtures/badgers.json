@@ -21,8 +21,8 @@
         "github": "http://github.com",
         "twitter": "http://twitter.com",
         "categories": [
-          { "name": "Engineering", "slug": "engineering" },
-          { "name": "Leadership", "slug": "leadership" }
+          { "name": "Engineering", "slug": "engineering", "order": 5 },
+          { "name": "Leadership", "slug": "leadership", "order": 1 }
         ]
       },
       {
@@ -44,8 +44,8 @@
         "github": "http://github.com",
         "twitter": "http://twitter.com",
         "categories": [
-          { "name": "Engineering", "slug": "engineering" },
-          { "name": "Leadership", "slug": "leadership" }
+          { "name": "Engineering", "slug": "engineering", "order": 5 },
+          { "name": "Leadership", "slug": "leadership", "order": 1 }
         ]
       }
     ]

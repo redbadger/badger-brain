@@ -20,6 +20,7 @@
         "linkedin": "http://linkedin.com",
         "github": "http://github.com",
         "twitter": "http://twitter.com",
+        "squarespaceId": "g39nf92",
         "categories": [
           { "name": "Engineering", "slug": "engineering" },
           { "name": "Leadership", "slug": "leadership" }
@@ -43,6 +44,7 @@
         "linkedin": "http://linkedin.com",
         "github": "http://github.com",
         "twitter": "http://twitter.com",
+        "squarespaceId": "c104jd9x",
         "categories": [
           { "name": "Engineering", "slug": "engineering" },
           { "name": "Leadership", "slug": "leadership" }

@@ -85,6 +85,12 @@
       "config" : {
         "label" : "Github"
       }
+    },
+    "squarespace-author-id" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Squarespace Author ID"
+      }
     }
   }
 }

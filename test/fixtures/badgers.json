@@ -10,10 +10,7 @@
         "imageUrl": "https://placekitten.com/335/335",
         "startDate": "01/01/2014",
         "about": "Hello I'm Alex",
-        "skills": [
-          "Programming",
-          "JavaScript"
-        ],
+        "skills": "Programming, JavaScript",
         "influence": "Many",
         "achievements": "Plenty of cool stuff",
         "linkedin": "http://linkedin.com",
@@ -33,9 +30,7 @@
         "imageUrl": "https://placekitten.com/335/335",
         "startDate": "05/12/2016",
         "about": "Here goes a description",
-        "skills": [
-          "Lua"
-        ],
+        "skills": "Lua",
         "influence": "1984",
         "achievements": "Just got here",
         "linkedin": "http://linkedin.com",

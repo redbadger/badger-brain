@@ -66,6 +66,12 @@
         "label" : "Image URL – see instructions here: http://webdocs.red-badger.com/chapter1.html"
       }
     },
+    "secondary-image-url": {
+      "type" : "Text",
+      "config" : {
+        "label" : "Secondary Image URL - see instructions here: http://webdocs.red-badger.com/chapter1.html"
+      }
+    },
     "squarespace-author-id" : {
       "type" : "Text",
       "config" : {

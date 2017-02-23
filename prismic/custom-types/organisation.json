@@ -20,6 +20,12 @@
         "label": "Description (Max 50 Characters)"
       }
     },
+    "careerBrief": {
+      "type": "Text",
+      "config": {
+        "label": "Career Brief (Max 50 Characters)"
+      }
+    },
     "URL": {
       "type": "Text",
       "config": {

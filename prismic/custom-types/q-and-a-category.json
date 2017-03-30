@@ -1,0 +1,27 @@
+{
+  "Main" : {
+    "category-name" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Category name",
+        "placeholder" : "What this category is called?"
+      }
+    },
+    "q-n-a-list" : {
+      "type" : "Group",
+      "fieldset" : "List of Q and A",
+      "config" : {
+        "fields" : {
+          "data" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "q-and-a" ],
+              "placeholder" : "Link to a Q and A"
+            }
+          }
+        }
+      }
+    }
+  }
+}

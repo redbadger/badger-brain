@@ -1,0 +1,19 @@
+{
+  "Main" : {
+    "question" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Question",
+        "placeholder" : "Write your question"
+      }
+    },
+    "answer" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, strong, em, hyperlink",
+        "label" : "Answer",
+        "placeholder" : "Write your answer"
+      }
+    }
+  }
+}

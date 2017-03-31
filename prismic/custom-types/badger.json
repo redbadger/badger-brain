@@ -68,10 +68,10 @@
           "height" : 500
         },
         "thumbnails" : [],
-        "label" : "Primary image"
+        "label" : "Primary image - see instructions here: http://webdocs.red-badger.com/chapter1.html"
       }
     },
-    "primary-image" : {
+    "secondary-image" : {
       "type" : "Image",
       "config" : {
         "constraint" : {
@@ -79,19 +79,19 @@
           "height" : 500
         },
         "thumbnails" : [],
-        "label" : "Secondary image"
+        "label" : "Secondary image - see instructions here: http://webdocs.red-badger.com/chapter1.html"
       }
     },
     "image-url" : {
       "type" : "Text",
       "config" : {
-        "label" : "Image URL – see instructions here: http://webdocs.red-badger.com/chapter1.html"
+        "label" : "DEPRECATED - use primary-image"
       }
     },
     "secondary-image-url": {
       "type" : "Text",
       "config" : {
-        "label" : "Secondary Image URL - see instructions here: http://webdocs.red-badger.com/chapter1.html"
+        "label" : "DEPRECATED - use secondary-image"
       }
     },
     "squarespace-author-id" : {

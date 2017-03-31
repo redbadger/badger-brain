@@ -64,8 +64,8 @@
       "type" : "Image",
       "config" : {
         "constraint" : {
-          "width" : 500,
-          "height" : 500
+          "width" : 670,
+          "height" : 670
         },
         "thumbnails" : [],
         "label" : "Primary image - see instructions here: http://webdocs.red-badger.com/chapter1.html"
@@ -75,8 +75,8 @@
       "type" : "Image",
       "config" : {
         "constraint" : {
-          "width" : 500,
-          "height" : 500
+          "width" : 670,
+          "height" : 670
         },
         "thumbnails" : [],
         "label" : "Secondary image - see instructions here: http://webdocs.red-badger.com/chapter1.html"

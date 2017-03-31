@@ -71,6 +71,17 @@
         "label" : "Primary image"
       }
     },
+    "primary-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 500,
+          "height" : 500
+        },
+        "thumbnails" : [],
+        "label" : "Secondary image"
+      }
+    },
     "image-url" : {
       "type" : "Text",
       "config" : {

@@ -32,6 +32,17 @@
         "label": "Organisation URL"
       }
     },
+    "organisation-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 670,
+          "height" : 670
+        },
+        "thumbnails" : [],
+        "label" : "Organisation image"
+      }
+    },
     "imageURL": {
       "type": "Text",
       "config": {

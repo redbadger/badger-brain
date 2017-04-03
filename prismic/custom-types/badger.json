@@ -68,7 +68,7 @@
           "height" : 670
         },
         "thumbnails" : [],
-        "label" : "Primary image - see instructions here: http://webdocs.red-badger.com/chapter1.html"
+        "label" : "Primary image"
       }
     },
     "secondary-image" : {
@@ -79,7 +79,7 @@
           "height" : 670
         },
         "thumbnails" : [],
-        "label" : "Secondary image - see instructions here: http://webdocs.red-badger.com/chapter1.html"
+        "label" : "Secondary image"
       }
     },
     "image-url" : {

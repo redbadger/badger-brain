@@ -27,6 +27,17 @@
         "label": "Strapline"
       }
     },
+    "news-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 670,
+          "height" : 670
+        },
+        "thumbnails" : [],
+        "label" : "Featured Image"
+      }
+    },
     "featureImage": {
       "type": "Text",
       "config": {

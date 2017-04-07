@@ -64,8 +64,8 @@
       "type" : "Image",
       "config" : {
         "constraint" : {
-          "width" : 670,
-          "height" : 670
+          "width" : null,
+          "height" : null
         },
         "thumbnails" : [],
         "label" : "Primary image"
@@ -75,8 +75,8 @@
       "type" : "Image",
       "config" : {
         "constraint" : {
-          "width" : 670,
-          "height" : 670
+          "width" : null,
+          "height" : null
         },
         "thumbnails" : [],
         "label" : "Secondary image"

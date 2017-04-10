@@ -60,16 +60,38 @@
         "label" : "Github"
       }
     },
+    "primary-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : null,
+          "height" : null
+        },
+        "thumbnails" : [],
+        "label" : "Primary image"
+      }
+    },
+    "secondary-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : null,
+          "height" : null
+        },
+        "thumbnails" : [],
+        "label" : "Secondary image"
+      }
+    },
     "image-url" : {
       "type" : "Text",
       "config" : {
-        "label" : "Image URL – see instructions here: http://webdocs.red-badger.com/chapter1.html"
+        "label" : "DEPRECATED - use primary-image"
       }
     },
     "secondary-image-url": {
       "type" : "Text",
       "config" : {
-        "label" : "Secondary Image URL - see instructions here: http://webdocs.red-badger.com/chapter1.html"
+        "label" : "DEPRECATED - use secondary-image"
       }
     },
     "squarespace-author-id" : {

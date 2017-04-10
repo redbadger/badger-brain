@@ -15,6 +15,17 @@
         "placeholder" : "Andrew Bestbier"
       }
     },
+    "profile-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : null,
+          "height" : null
+        },
+        "thumbnails" : [],
+        "label" : "Profile image"
+      }
+    },
     "imageURL" : {
       "type" : "Text",
       "fieldset" : "Profile Image",

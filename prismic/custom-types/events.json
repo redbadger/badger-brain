@@ -26,6 +26,17 @@
         "label" : "Featured event description"
       }
     },
+    "featured-image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : null,
+          "height" : null
+        },
+        "thumbnails" : [],
+        "label" : "Featured Image"
+      }
+    },
     "event-image" : {
       "type" : "Text",
       "config" : {

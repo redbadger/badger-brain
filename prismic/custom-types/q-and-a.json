@@ -10,7 +10,7 @@
     "answer" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph, strong, em, hyperlink",
+        "multi" : "paragraph, strong, hyperlink",
         "label" : "Answer",
         "placeholder" : "Write your answer"
       }

@@ -41,8 +41,9 @@ Workable integration is not implemented at the moment, but would be a logical st
 
 At the moment of writing, there are following client apps depending on Badger Brain:
 
-* [Website Next](https://github.com/redbadger/website-next)
+* [Website Honestly](https://github.com/redbadger/website-honestly)
 * [React.London](https://github.com/redbadger/react.london/)
+* ~~[Website Next](https://github.com/redbadger/website-next)~~ (DEPRECATED)
 
 New features of Badger Brain are largely dictated by the needs of clients. It should not however implement purely client based features, but instead aim at providing unified consistent interface through all features.
 

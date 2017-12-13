@@ -1,0 +1,30 @@
+{
+    "data": {
+      "allWebinars": [
+        {
+          "id": "WjEFWCgAAPPqT_e0",
+          "slug": "the-first-test-webinar",
+          "title": "The first test webinar",
+          "startDateTime": "2017-12-13T00:00:00+0000",
+          "endDateTime": "2017-12-13T01:00:00+0000",
+          "featureImageFilename": "https://prismic-io.s3.amazonaws.com/rb-website-stage/48c550ce8b9603c285c35c3c4be525150569e01f_react-europe.jpg",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Lorem ipsum dolor  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non  proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          ],
+          "webinarKey": "134235243525345",
+          "speakers": [
+            {
+              "id": "WH31dyUAAGdxJJtb",
+              "firstName": "Kadi",
+              "lastName": "Kraman",
+              "jobTitle": "Software Engineer",
+              "primaryImageUrl": "https://prismic-io.s3.amazonaws.com/rb-website-stage/01766146a1fad1340343d20148c7e5412736c470_laura1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  }

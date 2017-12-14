@@ -1,0 +1,65 @@
+{
+    "Main" : {
+      "uid" : {
+        "type" : "UID",
+        "config" : {
+          "label" : "UID"
+        }
+      },
+      "title" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Title"
+        }
+      },
+      "timestamp" : {
+        "type" : "Timestamp",
+        "config" : {
+          "label" : "Start date and time"
+        }
+      },
+      "timestampEnd" : {
+        "type" : "Timestamp",
+        "config" : {
+          "label" : "End date and time"
+        }
+      },
+      "featured-image" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Featured Image"
+        }
+      },
+      "body" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "strong, em, hyperlink, list-item",
+          "label" : "Body"
+        }
+      },
+      "speakers" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "data" : {
+              "type" : "Link",
+              "config" : {
+                "select" : "document",
+                "customtypes" : [ "badger" ],
+                "label" : "Link"
+              }
+            }
+          },
+          "label" : "Speakers"
+        }
+      },
+      "webinar-key" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Webinar Key"
+        }
+      }
+    }
+  }

@@ -8,12 +8,8 @@
           {
             "slug": "what-tech-can-you-use",
             "question": "What tech can you use?",
-            "answer": "Lots of amazing tech"
-          },
-          {
-            "slug": "what-makes-a-successful-project",
-            "question": "What makes a successful project?",
-            "answer": "Amazing people"
+            "answer": "Lots of amazing tech",
+            "order": 1
           }
         ]
       }

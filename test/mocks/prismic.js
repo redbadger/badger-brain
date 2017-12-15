@@ -74,7 +74,7 @@ export default class PrismicMock {
       .get('/api/documents/search')
       .query({
         page: 1,
-        pageSize: 100,
+        pageSize: 200,
         ref: 'V3UXpioAACQARLlk',
         q: `[[:d = at(document.type, "${docType}")]]`,
       })

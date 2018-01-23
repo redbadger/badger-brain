@@ -57,6 +57,12 @@ List of data providers:
 * Workable
 * Prismic.io
 
+## Prismic backup
+
+We send a backup of Prismic data to S3; see the detailed docs [here](prismic-backup-service/README.md).
+
+We also store the Prismic content types as JSON in [`prismic/custom-types`](prismic/custom-types/) (for documentation and potential backup purposes).
+
 ```
                     .oys:
                   .:dmmmmmmmddhyo+:.

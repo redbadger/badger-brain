@@ -21,7 +21,7 @@
         "label": "altText for link"
       }
     },
-    "desktop": {
+    "desktopURL": {
       "type": "Image",
       "config": {
         "constraint": {},
@@ -29,7 +29,7 @@
         "label": "Banner Image Desktop"
       }
     },
-    "tablet": {
+    "tabletURL": {
       "type": "Image",
       "config": {
         "constraint": {},
@@ -37,7 +37,7 @@
         "label": "Banner Image Tablet"
       }
     },
-    "mobile": {
+    "mobileURL": {
       "type": "Image",
       "config": {
         "constraint": {},

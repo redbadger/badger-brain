@@ -1,0 +1,49 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "title"
+      }
+    },
+    "link": {
+      "type": "Link",
+      "config": {
+        "label": "Banner Link",
+        "placeholder": "URL the banner links to"
+      }
+    },
+    "alt-text": {
+      "type": "StructuredText",
+      "config": {
+        "single": "preformatted",
+        "label": "altText for link"
+      }
+    },
+    "desktop": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Banner Image Desktop"
+      }
+    },
+    "tablet": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Banner Image Tablet"
+      }
+    },
+    "mobile": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Banner Image Mobile"
+      }
+    }
+  }
+}

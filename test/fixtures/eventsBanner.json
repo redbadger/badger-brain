@@ -1,0 +1,13 @@
+{
+  "data": {
+    "eventsBanner": [
+      {
+        "url": "http://bit.ly/2Gb1Ata",
+        "altText": "Are you bold with technology? Join our webinar",
+        "desktopURL": "https://prismic-io.s3.amazonaws.com/rb-website-stage/bc59b0c2296ae01367e7661a2d971ccfc257aee0_events-desktop-banner.jpg",
+        "tabletURL": "https://prismic-io.s3.amazonaws.com/rb-website-stage/18bee186d450ff202aa1b5376655f6e7d0f131ab_events-tablet-banner.jpg",
+        "mobileURL": "https://prismic-io.s3.amazonaws.com/rb-website-stage/74dc71eb82e2117ab310ab9f27ed6d2290e15ce5_events-mobile-banner.jpg"
+      }
+    ]
+  }
+}

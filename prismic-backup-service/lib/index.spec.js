@@ -16,7 +16,7 @@ describe('backupPrismic', () => {
         results_size: 100,
         total_results_size: 132,
         total_pages: 2,
-        next_page: 'https://r.prismic.io/api/documents/search?ref=-master-ref-&page=2&pageSize=100',
+        next_page: 'https://r.cdn.prismic.io/api/documents/search?ref=-master-ref-&page=2&pageSize=100',
         prev_page: null,
         results: [
           'we have results 1',
@@ -29,7 +29,7 @@ describe('backupPrismic', () => {
         total_results_size: 132,
         total_pages: 2,
         next_page: null,
-        prev_page: 'https://r.prismic.io/api/documents/search?ref=-master-ref-&page=1&pageSize=100',
+        prev_page: 'https://r.cdn.prismic.io/api/documents/search?ref=-master-ref-&page=1&pageSize=100',
         results: [
           'we have results 2',
         ],
@@ -53,7 +53,7 @@ describe('backupPrismic', () => {
     const responsesCopy = Object.assign({}, responses);
     const saved = [];
     const getJson = (url) => okPromise(() => {
-      if (url === 'https://rb-website-stage.prismic.io/api') {
+      if (url === 'https://rb-website-stage.cdn.prismic.io/api') {
         return apiResponse;
       }
       expect(url).to.include('-master-ref-');

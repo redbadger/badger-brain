@@ -59,7 +59,7 @@
     "mocha-trumpet-reporter": "0.0.3",
     "nock": "^9.1.4",
     "nodemon": "^1.9.2",
-    "pre-git": "^3.9.1",
+    "pre-git": "^3.17.0",
     "sinon": "^1.17.4",
     "supertest": "^2.0.0"
   },

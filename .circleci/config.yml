@@ -84,7 +84,7 @@ jobs:
 
       - run:
           name: Deploy to staging
-          command: sudo bash ./bin/deploy.sh staging
+          command: bash ./bin/deploy.sh staging
 
       - run:
           name: Update backup service

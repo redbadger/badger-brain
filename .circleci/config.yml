@@ -76,22 +76,19 @@ jobs:
           keys:
             - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
 
-      - run:
-          name: Deploy to staging
-          command: ./bin/ci-deploy.sh master-to-staging
+      - setup_remote_docker
 
-  deploy_production:
-    docker:
-      - image: redbadger/badger-brain-circle:1
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+      - run:
+          name: Add serverless
+          command: npm install serverless@1.0.0-rc.1 -g
 
       - run:
           name: Deploy to staging
-          command: ./bin/ci-deploy.sh master-to-production
+          command: sudo bash ./bin/deploy.sh staging
+
+      - run:
+          name: Update backup service
+          command: bash ./prismic-backup-service/bin/deploy-production.sh
 
 workflows:
   version: 2
@@ -118,6 +115,6 @@ workflows:
             - lint
             - test_backup_service
             - test
-          filters:
-            branches:
-              only: master
+          # filters:
+          #   branches:
+          #     only: master

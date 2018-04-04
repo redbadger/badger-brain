@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
+
 set -euo pipefail
 
 SERVICE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"

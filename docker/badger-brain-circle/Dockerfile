@@ -1,6 +1,6 @@
 FROM redbadger/website-honestly-node:2
 
-RUN apk add --no-cache make git openssh zip curl docker perl
+RUN apk add --no-cache make git openssh zip curl docker perl bash
 
 # Install aws cli
 RUN apk add --no-cache \

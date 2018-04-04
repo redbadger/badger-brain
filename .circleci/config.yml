@@ -1,0 +1,121 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: redbadger/badger-brain-circle:5
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+
+      - run:
+          name: Install Node modules
+          command: npm install
+
+      - run:
+          name: Install Node modules for backup service
+          command: cd prismic-backup-service && npm install
+
+      - save_cache:
+          key: node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+          paths:
+            - ./node_modules
+            - ./prismic-backup-service/node_modules
+
+  lint:
+    docker:
+      - image: redbadger/badger-brain-circle:5
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+
+      - run:
+          name: Lint code
+          command: npm run lint
+
+  test:
+    docker:
+      - image: redbadger/badger-brain-circle:5
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+
+      - run:
+          name: Test with coverage
+          command: npm run test-with-coverage
+
+      - run:
+          name: Send coverage report
+          command: cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+
+  test_backup_service:
+    docker:
+      - image: redbadger/badger-brain-circle:5
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+
+      - run:
+          name: Test backup service
+          command: cd prismic-backup-service && npm run test
+
+  deploy_staging:
+    docker:
+      - image: redbadger/badger-brain-circle:5
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
+
+      - setup_remote_docker
+
+      - run:
+          name: Add serverless
+          command: npm install serverless@1.0.0-rc.1 -g
+
+      - run:
+          name: Deploy to staging
+          command: bash ./bin/deploy.sh staging
+
+      - run:
+          name: Update backup service
+          command: bash ./prismic-backup-service/bin/deploy-production.sh
+
+workflows:
+  version: 2
+
+  build_and_deploy:
+    jobs:
+      - build
+
+      - lint:
+          requires:
+            - build
+
+      - test:
+          requires:
+            - build
+
+      - test_backup_service:
+          requires:
+            - build
+
+      - deploy_staging:
+          requires:
+            - build
+            - lint
+            - test_backup_service
+            - test
+          filters:
+            branches:
+              only: master
+

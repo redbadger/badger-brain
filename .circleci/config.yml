@@ -84,11 +84,11 @@ jobs:
 
       - run:
           name: Deploy to staging
-          command: bash ./bin/deploy.sh staging
+          command: ./bin/deploy.sh staging
 
       - run:
           name: Update backup service
-          command: bash ./prismic-backup-service/bin/deploy-production.sh
+          command: ./prismic-backup-service/bin/deploy-production.sh
 
 workflows:
   version: 2

@@ -115,6 +115,7 @@ workflows:
             - lint
             - test_backup_service
             - test
-          # filters:
-          #   branches:
-          #     only: master
+          filters:
+            branches:
+              only: master
+

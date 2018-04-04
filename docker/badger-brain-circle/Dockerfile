@@ -7,3 +7,6 @@ RUN apt-get update && \
         python-pip \
     && pip install --upgrade awsebcli --upgrade --ignore-installed six \
     && apt-get clean
+
+RUN apt-get install -y docker perl zip
+

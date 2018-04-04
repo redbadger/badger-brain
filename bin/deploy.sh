@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 ENV=$1
 RELEASE_TAG=$(git rev-parse HEAD)

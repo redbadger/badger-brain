@@ -61,7 +61,7 @@
     "nodemon": "^1.17.3",
     "pre-git": "^3.17.1",
     "sinon": "^1.17.4",
-    "supertest": "^2.0.0"
+    "supertest": "^3.3.0"
   },
   "config": {
     "pre-git": {

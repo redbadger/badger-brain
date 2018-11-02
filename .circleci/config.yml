@@ -80,7 +80,7 @@ jobs:
 
       - run:
           name: Add serverless
-          command: npm install serverless@1.0.0-rc.1 -g
+          command: npm install serverless@1.0.0-rc.1 -g --unsafe-perm
 
       - run:
           name: Deploy to staging
@@ -118,4 +118,3 @@ workflows:
           filters:
             branches:
               only: master
-

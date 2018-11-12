@@ -1,75 +1,67 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "fieldset" : "UID",
-      "config" : {
-        "placeholder" : "Please leave this blank"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "fieldset": "UID",
+      "config": {
+        "placeholder": "Please leave this blank"
       }
     },
-    "name" : {
-      "type" : "Text",
-      "fieldset" : "Name",
-      "config" : {
-        "label" : "Full Name",
-        "placeholder" : "Andrew Bestbier"
+    "name": {
+      "type": "Text",
+      "fieldset": "Name",
+      "config": {
+        "label": "Full Name",
+        "placeholder": "Andrew Bestbier"
       }
     },
-    "profile-image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : {
-          "width" : null,
-          "height" : null
+    "profile-image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": null,
+          "height": null
         },
-        "thumbnails" : [],
-        "label" : "Profile image"
+        "thumbnails": [],
+        "label": "Profile image"
       }
     },
-    "imageURL" : {
-      "type" : "Text",
-      "fieldset" : "Profile Image",
-      "config" : {
-        "label" : "Image URL"
+    "imageURL": {
+      "type": "Text",
+      "fieldset": "Profile Image",
+      "config": {
+        "label": "Image URL"
       }
     },
-    "company" : {
-      "type" : "Text",
-      "fieldset" : "Company",
-      "config" : {
-        "label" : "Company Name",
-        "placeholder" : "Red Badger"
+    "company": {
+      "type": "Text",
+      "fieldset": "Company",
+      "config": {
+        "label": "Company Name",
+        "placeholder": "Red Badger"
       }
     },
-    "twitterHandle" : {
-      "type" : "Text",
-      "fieldset" : "Social",
-      "config" : {
-        "label" : "Twitter Handle",
-        "placeholder" : "reactlondon_"
+    "twitterHandle": {
+      "type": "Text",
+      "fieldset": "Social",
+      "config": {
+        "label": "Twitter Handle",
+        "placeholder": "reactlondon_"
       }
     },
-    "githubHandle" : {
-      "type" : "Text",
-      "config" : {
-        "label" : "Github Handle",
-        "placeholder" : "redbadger"
+    "githubHandle": {
+      "type": "Text",
+      "config": {
+        "label": "Github Handle",
+        "placeholder": "redbadger"
       }
     },
-    "blogURL" : {
-      "type" : "Text",
-      "fieldset" : "Blog",
-      "config" : {
-        "label" : "Blog URL",
-        "placeholder": "http://red-badger.com/blog/"
-      }
-    },
-    "bio" : {
-      "type" : "StructuredText",
-      "fieldset" : "Description",
-      "config" : {
-        "placeholder" : "Full speaker description",
-        "multi" : "p"
+    "bio": {
+      "type": "StructuredText",
+      "fieldset": "Description",
+      "config": {
+        "placeholder": "Full speaker description",
+        "multi": "p"
       }
     }
   }

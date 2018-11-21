@@ -33,6 +33,14 @@
         "label": "Image URL"
       }
     },
+    "blogURL": {
+      "type": "Text",
+      "fieldset": "Blog",
+      "config": {
+        "label": "Blog URL",
+        "placeholder": "http://red-badger.com/blog/"
+      }
+    },
     "company": {
       "type": "Text",
       "fieldset": "Company",

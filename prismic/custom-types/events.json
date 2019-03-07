@@ -68,7 +68,7 @@
       "type" : "Select",
       "config" : {
         "label" : "Event Status",
-        "options" : [ "PRE_RELEASE", "TICKETS_LIVE", "WAITLIST", "LIVE_STREAM", "EVENT_ENDED" ],
+        "options" : [ "PRE_RELEASE", "TICKETS_LIVE", "WAITLIST", "REGISTRATION_CLOSED", "LIVE_STREAM", "EVENT_ENDED" ],
         "placeholder" : ""
       }
     },

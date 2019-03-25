@@ -31,7 +31,7 @@ Few easy steps:
 * Navigate to the Red Badger AWS console (Ireland region), Elastic Beanstalk =>
   Badger Brain => Application versions. The idea is that we're only promoting
   app versions that are already deployed to staging env. Select the version
-  that is currently deployed to staging then deploy, choosing
+  that is currently deployed to `badger-brain-staging`. Now deploy, choosing
   `badger-brain-live` as the target environment.
 * Job done.
 

@@ -20,6 +20,16 @@ npm run test       # Run the tests
 npm run test-watch # Run the tests and watch for changes
 ```
 
+## Secrets
+While Prismic integration with Badger Brain is open and will work without any authentication, Hubspot requires an API key.
+
+### To set up the environment variables for Hubspot integration, Follow the instructions of this command:
+`make keyrings`
+
+### Go to https://github.com/redbadger/blackbox-secrets/blob/master/README.md and follow instructions to:
+- "Getting Blackbox"
+- "Get access to existing blackbox secrets"
+
 ## Releasing to live
 
 Few easy steps:
@@ -28,10 +38,11 @@ Few easy steps:
 * Generate updated [CHANGELOG][changelog] file and push it to `master` branch.
   Use [Github Changelog Generator][generator] for this. Don't forget to pull
   the latest tags from Github before generating updates to the changelog.
-* Navigate to AWS console, EB => Badger Brain => App versions. The idea is
-  that we're only promoting app versions that are already deployed to staging
-  env. Find a current version that is on staging right now and deploy it to
-  LIVE.
+* Navigate to the Red Badger AWS console (Ireland region), Elastic Beanstalk =>
+  Badger Brain => Application versions. The idea is that we're only promoting
+  app versions that are already deployed to staging env. Select the version
+  that is currently deployed to `badger-brain-staging`. Now deploy, choosing
+  `badger-brain-live` as the target environment.
 * Job done.
 
 [releases]: https://github.com/redbadger/badger-brain/releases

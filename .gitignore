@@ -46,3 +46,4 @@ prismic-backup-service/config/env.json
 /.blackbox/secring.gpg
 /keyrings/files/.env
 keyrings/
+scanner/

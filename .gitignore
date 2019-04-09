@@ -39,3 +39,8 @@ docs/Gemfile.lock
 
 **/.serverless
 prismic-backup-service/config/env.json
+
+.prettierrc
+/keyrings/files/.env
+keyrings/
+scanner/

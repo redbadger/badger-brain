@@ -41,9 +41,6 @@ docs/Gemfile.lock
 prismic-backup-service/config/env.json
 
 .prettierrc
-/.blackbox/pubring.gpg~
-/.blackbox/pubring.kbx~
-/.blackbox/secring.gpg
 /keyrings/files/.env
 keyrings/
 scanner/

@@ -36,7 +36,7 @@
     "express-prismic": "^1.1.1",
     "graphql": "^0.6.0",
     "lodash": "^4.17.11",
-    "newrelic": "^1.28.3",
+    "newrelic": "^2.0.0",
     "node-fetch": "^1.6.3",
     "prismic.io": "^3.0.0",
     "ramda": "^0.21.0"

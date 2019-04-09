@@ -20,6 +20,16 @@ npm run test       # Run the tests
 npm run test-watch # Run the tests and watch for changes
 ```
 
+## Secrets
+While Prismic integration with Badger Brain is open and will work without any authentication, Hubspot requires an API key.
+
+### To set up the environment variables for Hubspot integration, Follow the instructions of this command:
+`make keyrings`
+
+### Go to https://github.com/redbadger/blackbox-secrets/blob/master/README.md and follow instructions to:
+- "Getting Blackbox"
+- "Get access to existing blackbox secrets"
+
 ## Releasing to live
 
 Few easy steps:

@@ -46,6 +46,7 @@
         }
       ],
       "ticketReleaseDate": "2013-07-24T12:00:00.000Z",
+      "ticketLink": "https://www.eventbrite.com/e/elrow-town-london-2019-tickets-49690716270",
       "featureImageFilename": "profile_DW_thumb.jpg",
       "body": "The Red Badger tech team talk about how Node powered the new BBC Now homepage pilot.",
       "datetime": {
@@ -92,7 +93,7 @@
             "type": "String",
             "value": "2016-07-25T23:00:00+0000"
           },
-          "text":  {
+          "text": {
             "type": "String",
             "value": "Doors open for pizza and beers"
           }
@@ -102,7 +103,7 @@
             "type": "String",
             "value": "2016-07-25T23:00:00+0000"
           },
-          "text":  {
+          "text": {
             "type": "String",
             "value": "Intro from Stu"
           }
@@ -120,11 +121,11 @@
       ],
       "sponsors": [
         {
-          "websiteURL":  {
+          "websiteURL": {
             "type": "String",
             "value": "http://red-badger.com"
           },
-          "imageURL":  {
+          "imageURL": {
             "type": "String",
             "value": "http://react.london/img/SVG/Badger_Roundel.svg"
           },

@@ -1,0 +1,240 @@
+{
+  "data": {
+    "allGoldCoinPages": [
+      {
+        "slug": "service-mesh",
+        "title": "Service Mesh",
+        "subTitle": "Service Mesh",
+        "headerImage": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+        "headerAlt": "a react logo",
+        "duration": "1 year",
+        "price": "£77",
+        "type": "Morris dancing",
+        "location": "The Moon",
+        "whatIsIt": "<p>This is a story</p><p>all about how <strong>my life got flipped</strong></p><ol><li>turned</li><li>upside</li></ol><ul><li>down</li><li>and I'd like</li></ul>",
+        "whoIsItFor": "<p>A small collection of loosely affiliated local business gnomes</p>",
+        "whatWillYouLearn": "<p>asfafsgarjg;earhglerhglebgarg</p><p>sgjd;gdkg</p><p>dfhlkdhlkdndkgjndslgkndgndlkfgdlfjgdfgd</p>",
+        "whoWillRun": "<p>A crew of massive pirates</p>",
+        "consultants": ["dr-sally", "alex-savin", "chris-good"],
+        "hubspotForm": {
+          "portalId": 4210858,
+          "guid": "a2c3b495-7093-47af-a6b6-bd4d82b9fe94",
+          "name": "Gold coins: service mesh",
+          "cssClass": "hs-form stacked",
+          "submitText": "Book now",
+          "inlineMessage": "Thanks for submitting the form.",
+          "formFields": [
+            {
+              "richText": "<h5>Want to discover Service Mesh?</h5>\n<p>Get in touch and we'll give you a call to arrange your session.</p>",
+              "name": null,
+              "label": null,
+              "fieldType": null,
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": false,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "email",
+              "label": "Email address",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": true,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "firstname",
+              "label": "Name",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "jobtitle",
+              "label": "Job title",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "company",
+              "label": "Company",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "phone",
+              "label": "Phone number",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "topic",
+              "label": "Topic",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": "Service mesh",
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": true,
+              "labelHidden": false
+            }
+          ]
+        }
+      },
+      {
+        "slug": "cool-stuff",
+        "title": "Cool Stuff",
+        "subTitle": "Cool stuff is cool and you should like it",
+        "headerImage": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+        "headerAlt": "a react logo",
+        "duration": "1 century",
+        "price": "Everything",
+        "type": "German disco",
+        "location": "There",
+        "whatIsIt": "<p>This is a story</p><p>all about how <strong>my life got flipped</strong></p><ol><li>turned</li><li>upside</li></ol><ul><li>down</li><li>and I'd like</li></ul>",
+        "whoIsItFor": "<p>A small collection of loosely affiliated local business gnomes</p>",
+        "whatWillYouLearn": "<p>asfafsgarjg;earhglerhglebgarg</p><p>sgjd;gdkg</p><p>dfhlkdhlkdndkgjndslgkndgndlkfgdlfjgdfgd</p>",
+        "whoWillRun": "<p>A crew of massive pirates</p>",
+        "consultants": ["dr-sally", "alex-savin", "chris-good"],
+        "hubspotForm": {
+          "portalId": 4210858,
+          "guid": "a2c3b495-7093-47af-a6b6-bd4d82b9fe94",
+          "name": "Gold coins: Cool Stuff",
+          "cssClass": "hs-form stacked",
+          "submitText": "Book now",
+          "inlineMessage": "Thanks for submitting the form.",
+          "formFields": [
+            {
+              "richText": "<h5>Want to discover Cool Stuff?</h5>\n<p>Get in touch and we'll give you a call to arrange your session.</p>",
+              "name": null,
+              "label": null,
+              "fieldType": null,
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": false,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "email",
+              "label": "Email address",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": true,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "firstname",
+              "label": "Name",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "jobtitle",
+              "label": "Job title",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "company",
+              "label": "Company",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "phone",
+              "label": "Phone number",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": null,
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": false,
+              "labelHidden": false
+            },
+            {
+              "richText": null,
+              "name": "topic",
+              "label": "Topic",
+              "fieldType": "text",
+              "description": null,
+              "defaultValue": "Service mesh",
+              "placeholder": null,
+              "required": false,
+              "enabled": true,
+              "hidden": true,
+              "labelHidden": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -35,7 +35,7 @@
     "express-graphql": "^0.5.3",
     "express-prismic": "^1.1.1",
     "graphql": "^0.6.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "newrelic": "^4.0.0",
     "node-fetch": "^1.6.3",
     "prismic.io": "^3.0.0",

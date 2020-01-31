@@ -5,7 +5,12 @@
         "slug": "service-mesh",
         "title": "Service Mesh",
         "subTitle": "Service Mesh",
-        "headerImage": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+        "headerImage": {
+          "main": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+          "large": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+          "medium": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+          "small": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg"
+        },
         "headerAlt": "a react logo",
         "duration": "1 year",
         "price": "£77",
@@ -122,7 +127,12 @@
         "slug": "cool-stuff",
         "title": "Cool Stuff",
         "subTitle": "Cool stuff is cool and you should like it",
-        "headerImage": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+        "headerImage": {
+          "main": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+          "large": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+          "medium": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg",
+          "small": "https://rb-website-stage.cdn.prismic.io/rb-website-stage/ed5e088fef14a0370ac14ede2a8507d6cc33a259_react-poster.jpg"
+        },
         "headerAlt": "a react logo",
         "duration": "1 century",
         "price": "Everything",

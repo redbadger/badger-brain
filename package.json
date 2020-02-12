@@ -39,7 +39,8 @@
     "newrelic": "^4.0.0",
     "node-fetch": "^1.6.3",
     "prismic.io": "^3.0.0",
-    "ramda": "^0.21.0"
+    "ramda": "^0.21.0",
+    "sanitize-html": "^1.21.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

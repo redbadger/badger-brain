@@ -120,7 +120,16 @@
               "hidden": true,
               "labelHidden": false
             }
-          ]
+          ],
+          "formConsent": {
+            "consentMessage": "<p>I agree to allow Red Badger to store and process my personal data.</p>",
+            "checkboxes": [
+              {
+                "label": "<p>Yes, please sign me up.</p>",
+                "required": false
+              }
+            ]
+          }
         }
       },
       {
@@ -242,7 +251,16 @@
               "hidden": true,
               "labelHidden": false
             }
-          ]
+          ],
+          "formConsent": {
+            "consentMessage": "<p>I agree to allow Red Badger to store and process my personal data.</p>",
+            "checkboxes": [
+              {
+                "label": "<p>Yes, please sign me up.</p>",
+                "required": false
+              }
+            ]
+          }
         }
       }
     ]

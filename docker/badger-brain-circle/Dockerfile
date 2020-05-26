@@ -1,5 +1,6 @@
 FROM redbadger/website-honestly-node:2
 
+ENV NODE_VERSION 12.17.0
 # Needed for pip install
 RUN apk add --no-cache openssh
 

@@ -11,6 +11,12 @@ jobs:
             - node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}
 
       - run:
+          name: install node 12
+          command: |
+            export NVM_DIR="/opt/circleci/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm install 12 && nvm alias default 12
+      - run:
           name: Install Node modules
           command: npm install
 

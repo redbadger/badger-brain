@@ -1,4 +1,4 @@
-FROM redbadger/website-honestly-node:2
+FROM node:12.2.0-stretch-slim
 
 ENV NODE_VERSION 12.17.0
 # Needed for pip install

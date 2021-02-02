@@ -1,6 +1,6 @@
 FROM node:12.20.1-alpine3.12
 
-ENV NODE_VERSION 12.17.0
+ENV NODE_VERSION 12.20.1
 # Needed for pip install
 RUN apk add --no-cache openssh
 RUN apk add --update --no-cache curl py-pip

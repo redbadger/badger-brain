@@ -16,7 +16,12 @@ jobs:
           node --version
   build:
     docker:
+<<<<<<< HEAD
       - image: redbadger/badger-brain-circle:8
+=======
+      - image: redbadger/badger-brain-circle:7
+
+>>>>>>> updates docker file
     steps:
       - checkout
       - restore_cache:
@@ -39,7 +44,11 @@ jobs:
 
   lint:
     docker:
+<<<<<<< HEAD
       - image: redbadger/badger-brain-circle:8
+=======
+      - image: redbadger/badger-brain-circle:7
+>>>>>>> updates docker file
     steps:
       - checkout
       - restore_cache:
@@ -52,7 +61,11 @@ jobs:
 
   test:
     docker:
+<<<<<<< HEAD
       - image: redbadger/badger-brain-circle:8
+=======
+      - image: redbadger/badger-brain-circle:7
+>>>>>>> updates docker file
     steps:
       - checkout
       - restore_cache:
@@ -69,7 +82,11 @@ jobs:
 
   test_backup_service:
     docker:
+<<<<<<< HEAD
       - image: redbadger/badger-brain-circle:8
+=======
+      - image: redbadger/badger-brain-circle:7
+>>>>>>> updates docker file
     steps:
       - checkout
       - restore_cache:
@@ -82,7 +99,11 @@ jobs:
 
   deploy_staging:
     docker:
+<<<<<<< HEAD
       - image: redbadger/badger-brain-circle:8
+=======
+      - image: redbadger/badger-brain-circle:7
+>>>>>>> updates docker file
     steps:
       - checkout
       - restore_cache:

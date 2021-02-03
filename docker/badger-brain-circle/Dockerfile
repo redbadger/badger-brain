@@ -11,8 +11,7 @@ RUN apk add --no-cache \
         less \
         mailcap \
         && \
-    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
-    apk -v --purge del py3-pip
+    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic
 
 # Build dependencies
 RUN apk add --no-cache make git zip curl docker perl bash

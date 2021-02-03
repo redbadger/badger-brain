@@ -29,8 +29,8 @@ docker push $ECR_REPO:$RELEASE_TAG
 
 # Apply docker image path to Dockerrun.aws.json template
 cp Dockerrun.aws.json.template Dockerrun.aws.json
-perl -pi -e "s,<ECR_REPO>,$ECR_REPO,g" "Dockerrun.aws.json"
-perl -pi -e "s,<TAG>,$VERSION,g" "Dockerrun.aws.json"
+perl -pi --no-include-email "s,<ECR_REPO>,$ECR_REPO,g" "Dockerrun.aws.json"
+perl -pi --no-include-email "s,<TAG>,$VERSION,g" "Dockerrun.aws.json"
 
 # Zip up Dockerrun.aws.json and upload to S3 bucket
 ZIP_FILE=$VERSION.zip

@@ -3,15 +3,15 @@ FROM node:12.20.1-alpine3.12
 ENV NODE_VERSION 12.20.1
 # Needed for pip install
 RUN apk add --no-cache openssh
-RUN apk add --update --no-cache curl py-pip
 # Install aws cli
 RUN apk add --no-cache \
-        py-pip \
+        python3 \
+        py3-pip \
         groff \
         less \
         mailcap \
         && \
-    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
+    pip3 install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip
 
 # Build dependencies

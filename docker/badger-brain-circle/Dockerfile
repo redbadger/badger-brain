@@ -6,13 +6,13 @@ RUN apk add --no-cache openssh
 # Install aws cli
 RUN apk add --no-cache \
         python3 \
-        py-pip \
+        py3-pip \
         groff \
         less \
         mailcap \
         && \
     pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
-    apk -v --purge del py-pip
+    apk -v --purge del py3-pip
 
 # Build dependencies
 RUN apk add --no-cache make git zip curl docker perl bash

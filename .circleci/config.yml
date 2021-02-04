@@ -2,7 +2,6 @@ orbs: # declare what orbs we are going to use
   node: circleci/node@2.0.2 # the node orb provides common node-related configuration 
 
 version: 2.1 # using 2.1 provides access to orbs and other features
-
 jobs:
   install-node-example:
     docker:
@@ -16,7 +15,7 @@ jobs:
           node --version
   build:
     docker:
-      - image: redbadger/badger-brain-circle:12
+      - image: redbadger/badger-brain-circle:13
 
     steps:
       - checkout
@@ -40,7 +39,7 @@ jobs:
 
   lint:
     docker:
-      - image: redbadger/badger-brain-circle:12
+      - image: redbadger/badger-brain-circle:13
     steps:
       - checkout
       - restore_cache:
@@ -53,7 +52,7 @@ jobs:
 
   test:
     docker:
-      - image: redbadger/badger-brain-circle:12
+      - image: redbadger/badger-brain-circle:13
     steps:
       - checkout
       - restore_cache:
@@ -70,7 +69,7 @@ jobs:
 
   test_backup_service:
     docker:
-      - image: redbadger/badger-brain-circle:12
+      - image: redbadger/badger-brain-circle:13
     steps:
       - checkout
       - restore_cache:
@@ -83,7 +82,7 @@ jobs:
 
   deploy_staging:
     docker:
-      - image: redbadger/badger-brain-circle:12
+      - image: redbadger/badger-brain-circle:13
     steps:
       - checkout
       - restore_cache:

@@ -17,6 +17,6 @@ RUN npm run build
 # Prune dev dependencies
 RUN npm prune --production
 
-EXPOSE 3001
+# EXPOSE 3001
 
 CMD [ "npm", "run", "serve" ]

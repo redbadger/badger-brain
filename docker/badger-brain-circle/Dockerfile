@@ -6,7 +6,7 @@ RUN apk add --no-cache openssh
 # Install aws cli
 RUN apk add --no-cache \
         python3 \
-        py-pip \
+        py3-pip \
         groff \
         less \
         mailcap \

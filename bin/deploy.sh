@@ -19,7 +19,7 @@ set -eu
 set -o pipefail
 
 # Authenticate
-eval $(aws ecr get-login --region=$AWS_REGION)
+eval $(aws ecr get-login --no-include-email --region=$AWS_REGION)
 
 # Build Docker image
 VERSION=$RELEASE_TAG

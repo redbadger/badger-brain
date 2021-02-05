@@ -4,9 +4,15 @@ FROM node:12.16.1-alpine3.10
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# babel (fsevents/node-gyp) needs this
+RUN apk add --no-cache \
+          make \
+          python3 \
+          build-base
+
 # Install app dependencies
-COPY package.json /usr/src/app/
-RUN npm install
+COPY package*.json /usr/src/app/
+RUN npm ci
 
 # Bundle app source
 COPY . /usr/src/app

@@ -25,11 +25,11 @@ jobs:
 
       - run:
           name: Install Node modules
-          command: npm install
+          command: npm ci
 
       - run:
           name: Install Node modules for backup service
-          command: cd prismic-backup-service && npm install
+          command: cd prismic-backup-service && npm ci
 
       - save_cache:
           key: node_modules-{{ checksum "package-lock.json" }}-{{ checksum "./prismic-backup-service/package-lock.json" }}

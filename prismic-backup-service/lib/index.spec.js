@@ -53,7 +53,7 @@ describe('backupPrismic', () => {
     const responsesCopy = Object.assign({}, responses);
     const saved = [];
     const getJson = (url) => okPromise(() => {
-      if (url === 'https://rb-website-stage.cdn.prismic.io/api') {
+      if (url === 'https://rb-website.cdn.prismic.io/api') {
         return apiResponse;
       }
       expect(url).to.include('-master-ref-');

@@ -5,7 +5,7 @@ Lambda that requests documents from prismic and stores the results in an S3 buck
 
 ```sh
 # Install the Serverless CLI
-npm install serverless@1.0.0-rc.1 -g
+npm install serverless -g
 
 # Set up the dev environment variables
 cp config/env.example.json config/env.json

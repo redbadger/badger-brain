@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const leftPad = require('./left-pad');
 const saveJson = require('./s3').saveJson;
 
-const prismicApiURL = 'https://rb-website-stage.cdn.prismic.io/api';
+const prismicApiURL = 'https://rb-website.cdn.prismic.io/api';
 const timestamp = new Date().toISOString().substring(0, 10);
 
 function saveMetadata(bucketName, metadata, funcs) {

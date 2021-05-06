@@ -41,7 +41,7 @@
     "node-fetch": "^2.6.1",
     "prismic.io": "^3.0.0",
     "ramda": "^0.21.0",
-    "sanitize-html": "^1.21.1"
+    "sanitize-html": "^2.3.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

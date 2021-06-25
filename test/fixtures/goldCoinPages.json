@@ -2,6 +2,7 @@
   "data": {
     "allGoldCoinPages": [
       {
+        "unlisted": false,
         "slug": "service-mesh",
         "title": "Service Mesh",
         "subTitle": "Service Mesh",
@@ -133,6 +134,7 @@
         }
       },
       {
+        "unlisted": true,
         "slug": "cool-stuff",
         "title": "Cool Stuff",
         "subTitle": "Cool stuff is cool and you should like it",

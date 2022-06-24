@@ -38,7 +38,7 @@
     "lodash": "^4.17.19",
     "moment": "^2.29.1",
     "newrelic": "^7.1.1",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "prismic.io": "^3.0.0",
     "ramda": "^0.21.0",
     "sanitize-html": "^1.21.1"
